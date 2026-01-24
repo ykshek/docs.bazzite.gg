@@ -211,6 +211,16 @@ and then try to connect again.
 ujust _toggle-gigabyte-wake-fix
 ```
 
+## Nvidia Optimus GPU not detected on laptops
+
+**Issue:** If you are running Bazzite on a laptop with an Nvidia Optimus GPU, you might notice that games are running poorly and seem to be running on the integrated GPU.
+
+**Resolution:** You need to enable supergfxctl which will automatically switch to the discrete Nvidia GPU when launching your games. Open a terminal and run:
+
+```bash
+ujust enable-supergfxctl
+```
+
 <hr>
 
 **See also**: [Steam Gaming Mode Quirks](/Handheld_and_HTPC_edition/quirks.md)
