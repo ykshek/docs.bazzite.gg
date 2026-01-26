@@ -41,7 +41,7 @@ Intended specifically for desktops and laptops with a focus on gaming which is i
 
 <sub>(**Variant 3**)</sub>
 
-A version of Bazzite that specifically caters to software development.  There is no ISO to install it, but rather a version that can be switched to by rebasing from your current image to a Bazzite-DX image.
+A version of Bazzite that specifically caters to software development. It is not installed via an ISO; instead, you switch to it by rebasing from your current image to a Bazzite-DX image.
 
 #### Bazzite Image Chart Example
 
