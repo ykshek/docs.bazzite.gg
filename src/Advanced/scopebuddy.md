@@ -68,7 +68,7 @@ This means we can now shorten our Launch Options for games we want to run in gam
 scb -- %command% --launcher-skip
 ```
 
-!! note
+!!! note
     `--launcher-skip` is just an example launch option
 
 ### Auto Resolution/HDR/VRR
