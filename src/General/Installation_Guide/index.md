@@ -8,7 +8,11 @@ title: Installation Guide
 
 # Bazzite Installation Guide
 
-### **Important Installation Notes**:
+!!! Note
+      
+      This installation guide is for the **legacy ISO** and an update for the new ISOs will be coming soon.
+
+## **Important Installation Notes**:
 
 - Use a download manager (like [**Motrix**](https://motrix.app/)) if the direct download fails or is downloading too slow.
 
