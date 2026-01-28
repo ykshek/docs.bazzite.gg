@@ -18,6 +18,10 @@ tags:
 
 ![image|690x332](../../img/image.jpeg)
 
+!!! Note
+      
+      This installation guide is for the **legacy ISO** and an update for the new ISOs will be coming soon.
+
 ## Bazzite on the Steam Deck
 
 ### Status

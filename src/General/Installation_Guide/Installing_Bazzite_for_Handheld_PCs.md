@@ -19,6 +19,10 @@ tags:
 
 ![ASUS ROG Ally|690x301](../../img/ASUS_ROG_Ally.jpeg)
 
+!!! Note
+      
+      This installation guide is for the **legacy ISO** and an update for the new ISOs will be coming soon.
+
 ## Important Notes on Handheld Hardware
 
 !!! attention
