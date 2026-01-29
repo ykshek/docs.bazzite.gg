@@ -1,5 +1,5 @@
 ---
-title: "ZeroTier"
+title: "ZeroTier Setup"
 ---
 
 # ZeroTier Setup
