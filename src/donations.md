@@ -74,7 +74,7 @@ Enjoy using Bazzite and want to help sustain its development? Consider sponsorin
 {{ contributor("Valerie", "valerie-tar-gz", "Social Media Manager, Technical Support") }}
 {{ contributor("Amélia", "ameliasvg", "Logo and Mascot Creator") }}
 {{ contributor("Kurt Himebauch", "xXJSONDeruloXx", "ujust Extraordinaire. Decky wrangler. Framegen.") }}
-{{ contributor("Xarishark", "Xarishark", "UX enhancements and bug fixes") }}
+{{ contributor("Zacharias Xenakis", "Xarishark", "Bazzite Portal, UX enhancements, bug fixes & translations") }}
 {{ contributor("stellaberrant", "stellaberrant", "Translations and bug fixes") }}
 {{ contributor("wolfyreload", "wolfyreload", "Visual Guides on Youtube, QA Testing") }}
 {{ contributor("CharlieBros", "CharlieBros", "Language Translations in Spanish") }}
