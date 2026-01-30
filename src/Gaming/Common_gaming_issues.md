@@ -33,7 +33,6 @@ Sometimes Steam games will completely refuse to launch on a secondary user accou
 This can be due to the ownership of the WINE prefix files. 
 You might see an error like this in ` ~/.local/share/Steam/logs/console-linux.txt ` on the secondary user account:
 
-``` 
 wineserver: /SteamLibrary/steamapps/compatdata/377160/pfx is not owned by you
 ```
 
