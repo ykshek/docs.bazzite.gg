@@ -1,14 +1,8 @@
 ---
-authors:
-  - "@nicknamenamenick"
-  - "@Zeglius"
-tags:
-  - Knowledge Base
+title: Hardware Compatibility for Linux Gaming
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2659", "fetched_at": "2024-09-03 16:43:08.896738+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Hardware Compatibility for Linux Gaming
 
 ## General Hardware
 
