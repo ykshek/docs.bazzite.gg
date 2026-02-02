@@ -1,13 +1,8 @@
 ---
-authors:
-  - "@nicknamenamenick"
-tags:
-  - Guide
+title: Managing and Modding Games
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2657", "fetched_at": "2024-09-03 16:43:07.954041+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Managing and Modding Games
 
 ## Compatibility Layers
 
