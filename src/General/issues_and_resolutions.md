@@ -99,47 +99,48 @@ Next run `iw wlp6s0 get power_save` (change `wlp6s0` if your device name is diff
 Power save: on
 ```
 
-There are different steps to resolve this depending on if you've enabled **iwd** with `ujust toggle-iwd` (by default iwd is *disabled* and **wpa_supplicant** is used).
+There are different steps to resolve this depending on if you've disabled **iwd**. If you have updated or installed Bazzite after [1st Jan 2026](https://universal-blue.discourse.group/t/bazzite-spring-cleaning-in-december-update/), **iwd** will be set as the default WiFi backend.
+!!! info "**iwd** replaced **wpa_supplicant** as the default WiFi backend for Bazzite since 2026. To switch back, run `ujust toggle-iwd`. Note that switching will **remove** all network configurations."
 
-### wpa_supplicant (iwd is OFF)
+=== "iwd (iwd is ON)"
 
-We are going to configure NetworkManager to not use the power save feature for all Wi-FI devices. Open a terminal and run
+    We are going to configure iwd to not use the power save feature for all Wi-Fi devices. Open a terminal and run
 
-```bash
-printf "[connection]\nwifi.powersave = 2" | sudo tee /etc/NetworkManager/conf.d/wifi-powersave-off.conf
-sudo systemctl restart NetworkManager
-```
+    ```bash
+    printf "[DriverQuirks]\nPowerSaveDisable = *" | sudo tee /etc/iwd/main.conf
+    sudo systemctl restart iwd
+    ```
 
-Next, run `iw wlp6s0 get power_save` to confirm that power save is off:
-```
-Power save: off
-```
+    Next, run `iw wlp6s0 get power_save` to confirm that power save is off:
+    ```
+    Power save: off
+    ```
 
-Note that this fix may negatively affect the battery life of your laptop or handheld. If you do wish to reverse this change, just delete the config file:
-```bash
-sudo rm /etc/NetworkManager/conf.d/wifi-powersave-off.conf
-sudo systemctl restart NetworkManager
-```
+    Note that this fix may negatively affect the battery life of your laptop or handheld. If you do wish to reverse this change, just delete the config file:
+    ```bash
+    sudo rm /etc/iwd/main.conf
+    sudo systemctl restart iwd
+    ```
 
-### iwd (iwd is ON)
+=== "wpa_supplicant (iwd is OFF)"
 
-We are going to configure iwd to not use the power save feature for all Wi-Fi devices. Open a terminal and run
+    We are going to configure NetworkManager to not use the power save feature for all Wi-Fi devices. Open a terminal and run
 
-```bash
-printf "[DriverQuirks]\nPowerSaveDisable = *" | sudo tee /etc/iwd/main.conf
-sudo systemctl restart iwd
-```
+    ```bash
+    printf "[connection]\nwifi.powersave = 2" | sudo tee /etc/NetworkManager/conf.d/wifi-powersave-off.conf
+    sudo systemctl restart NetworkManager
+    ```
 
-Next, run `iw wlp6s0 get power_save` to confirm that power save is off:
-```
-Power save: off
-```
+    Next, run `iw wlp6s0 get power_save` to confirm that power save is off:
+    ```
+    Power save: off
+    ```
 
-Note that this fix may negatively affect the battery life of your laptop or handheld. If you do wish to reverse this change, just delete the config file:
-```bash
-sudo rm /etc/iwd/main.conf
-sudo systemctl restart iwd
-```
+    Note that this fix may negatively affect the battery life of your laptop or handheld. If you do wish to reverse this change, just delete the config file:
+    ```bash
+    sudo rm /etc/NetworkManager/conf.d/wifi-powersave-off.conf
+    sudo systemctl restart NetworkManager
+    ```
 
 <hr>
 
