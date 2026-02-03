@@ -100,7 +100,7 @@ Power save: on
 ```
 
 There are different steps to resolve this depending on if you've disabled **iwd**. If you have updated or installed Bazzite after [1st Jan 2026](https://universal-blue.discourse.group/t/bazzite-spring-cleaning-in-december-update/), **iwd** will be set as the default WiFi backend.
-!!! info "**iwd** replaced **wpa_supplicant** as the default WiFi backend for Bazzite since 2026. To switch back, run `ujust toggle-iwd`. Note that switching will **remove** all network configurations."
+!!! info "For performance reasons, and to fix certain issues in relation to streaming, [`iwd`](https://wiki.archlinux.org/title/Iwd) replaced [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant) as the default WiFi backend for Bazzite since 2026. To switch back, run `ujust toggle-iwd`. Note that switching will **remove** all network configurations."
 
 === "iwd (iwd is ON)"
 
@@ -146,17 +146,11 @@ There are different steps to resolve this depending on if you've disabled **iwd*
 
 ## Error on connecting to Wi-Fi: "Failed to add new connection: 802.1x connections must have IWD provisioning files"
 
-**Issue:** NetworkManager cannot automatically generate 802.1x connections when using the [`iwd`](https://wiki.archlinux.org/title/Iwd) backend.
+!!! info "For performance reasons, and to fix certain issues in relation to streaming, [`iwd`](https://wiki.archlinux.org/title/Iwd) replaced [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant) as the default WiFi backend for Bazzite since 2026. To switch back, run `ujust toggle-iwd`. Note that switching will **remove** all network configurations."
 
-**Resolution:** For performance reasons, and to fix certain issues in relation to streaming (Sunshine/Moonlight, Steam Remote Play, and cloud streaming services) Bazzite enables `iwd` by default.  If you're using Bazzite on a *Wi-Fi Enterprise* network, open your terminal and execute.
+NetworkManager cannot automatically generate 802.1x connections when using the `iwd` backend.
 
-```bash
-ujust toggle-iwd
-```
-
-This switches the Wi-Fi backend to the legacy [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant) and allow you to connect again.
-
-**Alternative resolution:** If you prefer to keep using the `iwd` backend and just want to connect to `eduroam`, follow these steps:
+If you prefer to keep using the `iwd` backend and just want to connect to `eduroam`, follow these steps:
 
 ```bash
 sudo nano /var/lib/iwd/eduroam.8021x
@@ -184,7 +178,50 @@ Now try to connect again. If you still can't connect, execute:
 nmcli connection modify eduroam 802-1x.phase1-auth-flags 32
 ```
 
-Try to connect again.
+And try to connect again.
+
+If you still encounter Wi-Fi related issues, try reverting to the `wpa_supplicant` backend or reach out to support on https://discord.bazzite.gg.
+
+<hr>
+
+## Error on connecting to Wi-Fi: "IP configuration was unavailable" when connecting to 802.1x wireless networks
+
+!!! info "For performance reasons, and to fix certain issues in relation to streaming, [`iwd`](https://wiki.archlinux.org/title/Iwd) replaced [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant) as the default WiFi backend for Bazzite since 2026. To switch back, run `ujust toggle-iwd`. Note that switching will **remove** all network configurations."
+
+Check the system logs with `ujust logs-this-boot | grep NetworkManager`, you should be able to see that 
+
+```
+NetworkManager[1563]: <info>  [1770094603.8488] device (wlan0): state change: failed -> disconnected (reason 'none', managed-type: 'full')
+NetworkManager[1563]: <info>  [1770094603.8568] dhcp4 (wlan0): canceled DHCP transaction
+NetworkManager[1563]: <info>  [1770094603.8569] dhcp4 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+NetworkManager[1563]: <info>  [1770094603.8569] dhcp4 (wlan0): state changed no lease
+```
+
+When using the `iwd` backend, NetworkManager may be unable to obtain a DHCP lease on an Enterprise network if you have connected to it previously on a different backend or a different OS. 
+
+If you prefer to keep using the `iwd` backend, follow these steps:
+
+```bash
+sudo mkdir -p /etc/iwd/
+sudo nano /etc/iwd/main.conf
+```
+
+Then add the following:
+
+```ini
+[General]
+AddressRandomization=network
+```
+
+Afterwards, press `Ctrl+X` and `Y` to Save & Exit, then reload `iwd` by running:
+
+```bash
+systemctl daemon-reload
+systemctl restart iwd
+```
+
+You should be able to connect to the enterprise network.
+If you still encounter Wi-Fi related issues, try reverting to the `wpa_supplicant` backend or reach out to support on https://discord.bazzite.gg.
 
 <hr>
 
