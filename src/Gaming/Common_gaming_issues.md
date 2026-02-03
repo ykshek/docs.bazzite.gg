@@ -59,7 +59,3 @@ lrwxrwxrwx. 1 USER2 USER2           53 Jan 29 15:12 workshop
 ```
 
 Similarly copy or symlink the appmanifest files from each library for games to show up properly in each Steam library. 
-
-<hr>
-
-[**<-- Back to Gaming Guide**](./index.md)
