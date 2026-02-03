@@ -6,7 +6,7 @@ title: Game Launchers
 
 ## **Steam Setup**
 
-Steam can run Windows games on Linux. It utilizes a wide range of projects and patches all packed into a piece of software built-in to Steam called [*Proton**](https://github.com/ValveSoftware/Proton) for Windows compatibility*.
+Steam can run Windows games on Linux. It utilizes a wide range of projects and patches all packed into a piece of software built-in to Steam called [*Proton**](https://github.com/ValveSoftware/Proton) for Windows compatibility.
 
 ### Forcing A Specific Proton / Steam Play Tool Version
 
