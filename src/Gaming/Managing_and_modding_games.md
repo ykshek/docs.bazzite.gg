@@ -43,7 +43,7 @@ Many PC games drop files in Windows folders like "My Documents" or "AppData" and
 
 For games on Steam, they are located in your `~/.steam/root/steamapps/compatdata/` folder, and then the **AppID number of the game**:
 
-- This ID by going into the game's properties on Steam in the games `Properties > Updates > App ID`
+- This ID by going into the game's properties on Steam in the games **Properties** >> **Updates** >> **App ID**
 - Continue to `.../pfx/drive_c/` and wherever the game drops the file on Windows.
 
 Non-Steam games can have the prefix folder anywhere you specify.  By default Lutris uses `~/Games` as the main folder.
