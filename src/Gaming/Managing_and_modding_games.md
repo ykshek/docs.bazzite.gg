@@ -16,6 +16,19 @@ Windows games need to run through a **compatibility layer** (like Proton) on Baz
 
 Some games require [Protontricks](https://github.com/Matoking/protontricks) (pre-installed) or [Winetricks](https://github.com/Winetricks/winetricks) (for non-Steam games, included with Lutris) to function properly by installing Windows DLLs into the prefix.
 
+## Hidden Files in File Manager
+
+!!! note
+
+    Winecfg contains the option to show hidden files for Windows programs that require the filepicker.
+
+Desktop Linux contains hidden files and directories that may include important files related to gaming.
+
+**Show hidden files** by clicking the **hamburger menu** (_3 horizontal lines in the file manager_) and selecting "Show Hidden Files" to see every directory and file that is hidden by default.
+
+These directories and files all start with a `.` before it
+
+
 ### What is a Proton (or Wine) Prefix?
 
 It's the glue that holds everything together when you run a game through Proton and also is responsible for containing any of the files the game would drop outside of the installation folder.
@@ -34,19 +47,6 @@ For games on Steam, they are located in your `~/.steam/root/steamapps/compatdata
 - Continue to `.../pfx/drive_c/` and wherever the game drops the file on Windows.
 
 Non-Steam games can have the prefix folder anywhere you specify.  By default Lutris uses `~/Games` as the main folder.
-
-#### Hidden Files in File Manager
-
-!!! note
-
-    Winecfg contains the option to show hidden files for Windows programs that require the filepicker.
-
-Desktop Linux contains hidden files and directories that may include important files related to gaming.
-
-**Show hidden files** by clicking the **hamburger menu** (_3 horizontal lines in the file manager_) and selecting "Show Hidden Files" to see every directory and file that is hidden by default.
-
-These directories and files all start with a `.` before it
-
 
 ## Modding
 
