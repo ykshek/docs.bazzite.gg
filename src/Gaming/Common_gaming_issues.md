@@ -14,7 +14,7 @@ If a Linux native game does not launch, then force the **Legacy Runtime** compat
 
 ### Denuvo Anti-Tamper DRM Locking Games
 
-Games that use Denuvo Anti-Tamper DRM consider changing Proton versions as activiating the game on different hardware which may cause you to get locked out of the game if you change the Proton version more than 5 times within a 24 hour period.
+Games that use Denuvo Anti-Tamper DRM consider changing Proton versions as activating the game on different hardware which may cause you to get locked out of the game if you change the Proton version more than 5 times within a 24 hour period.
 
 ### Steam Logs
 
