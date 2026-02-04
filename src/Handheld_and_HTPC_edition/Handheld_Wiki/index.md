@@ -20,13 +20,13 @@ Bazzite-Deck images ship with [Steam Gaming Mode](../Steam_Gaming_Mode.md) which
 
 _Click the name of each hardware to view post-installation setup and known issues/workarounds._
 
-- [**Steam Deck**](./Steam_Deck.md)
-- [**Lenovo Handhelds**](./Lenovo_Legion_Go.md)
 - [**ASUS Handhelds**](./ASUS_ROG_Ally.md)
+- [**Lenovo Handhelds**](./Lenovo_Legion_Go.md)
 - [**GPD Handhelds**](./GPD_Handhelds.md)
 - [**OneXPlayer Handhelds**](./OneXPlayer_Handhelds.md)
 - [**Ayn Handhelds**](./Ayn_Handhelds.md)
 - [**Ayaneo Handhelds**](./Ayaneo_Handhelds.md)
+- [**Steam Deck**](./Steam_Deck.md)
 - [**Other Handhelds**](./Other_Handhelds.md)
 
 If your handheld isn't listed in the entries, then it does **not** necessarily mean that the device is unsupported. 
