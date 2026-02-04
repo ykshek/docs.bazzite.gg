@@ -8,7 +8,7 @@ title: Installing Bazzite for HTPC Hardware
 
 !!! Note
       
-      This installation guide is for the **legacy ISO** and an updated guide for the new ISOs will be coming soon..
+      This installation guide is for the **legacy ISO** and an updated guide for the new ISOs will be coming soon.
 
 ## Pre-Installation
 
