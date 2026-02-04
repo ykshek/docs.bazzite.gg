@@ -35,6 +35,19 @@ For games on Steam, they are located in your `~/.steam/root/steamapps/compatdata
 
 Non-Steam games can have the prefix folder anywhere you specify.  By default Lutris uses `~/Games` as the main folder.
 
+#### Hidden Files in File Manager
+
+!!! note
+
+    Winecfg contains the option to show hidden files for Windows programs that require the filepicker.
+
+Desktop Linux contains hidden files and directories that may include important files related to gaming.
+
+**Show hidden files** by clicking the **hamburger menu** (_3 horizontal lines in the file manager_) and selecting "Show Hidden Files" to see every directory and file that is hidden by default.
+
+These directories and files all start with a `.` before it
+
+
 ## Modding
 
 **Steam Workshop is the most straightforward method to obtain mods**, but is not supported for every title and requires you to own the game on Steam. Some mod managers have Linux ports like [r2modman](https://github.com/ebkr/r2modmanPlus).
