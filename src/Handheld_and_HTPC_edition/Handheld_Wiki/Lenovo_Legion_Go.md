@@ -1,8 +1,8 @@
 ---
-title: Lenovo Legion Go Handhelds
+title: Lenovo Handhelds
 ---
 
-# Lenovo Legion Go Handhelds
+# Lenovo Handhelds
 
 !!! disclaimer
 
