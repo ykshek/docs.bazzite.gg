@@ -1,14 +1,8 @@
 ---
-authors:
-  - "@nicknamenamenick"
-tags:
-  -  Handhelds
+title: GPD Handhelds
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2418", "fetched_at": "2024-09-03 16:43:21.260488+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
-
+# GPD Handhelds
 
 !!! disclaimer
 
@@ -69,13 +63,3 @@ For more information, check out the [GPD Win Tips and Tricks guide](https://gith
 ### External Resource
 
 For more information, check out the [GPD Win Tips and Tricks guide](https://github.com/aarron-lee/gpd-win-tricks) which includes useful scripts for this handheld.
-
-### Contributing
-
-This page is a **wiki**, edit it to add any relevant information you may have regarding the handheld and your experience with Bazzite on it. Make sure to follow proper [contributing guidelines](https://universal-blue.org/contributing.html) before adding any edits.
-
-<hr>
-
-**See also**: [Steam Gaming Mode Overview](../Steam_Gaming_Mode.md)
-
-**<-- Back to [Handheld Wiki](./index.md)**
