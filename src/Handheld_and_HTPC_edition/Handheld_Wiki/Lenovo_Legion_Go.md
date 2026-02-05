@@ -16,16 +16,12 @@ title: Lenovo Handhelds
 - Configure the HHD Overlay by opening it with <kbd>Legion R</kbd>
 - Adjust the scaling of the UI in the Display Settings
 
-### Workarounds / Known Issues
+### Known Issues
 
 - Performance overlay might be reporting inaccurate power consumption.
 - Adaptive/auto display brightness is currently broken.
   - Manual brightness slider in Steam's UI works without issues.
 - BIOS and controller firmware is **recommended** to update in Windows.
-
-### Updating the BIOS without a Windows installation
-
-Read the [tutorial](/Handheld_and_HTPC_edition/update-bios-lenovo-legion-go.md) on how to update the BIOS for the Lenovo Legion Go without a Windows installation.
 
 ### BIOS update breaks Secure Boot key
 
