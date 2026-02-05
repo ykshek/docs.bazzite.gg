@@ -2,18 +2,15 @@
 title: Advanced Guides
 ---
 
-## Utilities
-
-- [**Managing Gamescope Using ScopeBuddy**](/Advanced/scopebuddy.md)
-- [**Using Looking-Glass**](/Advanced/looking-glass.md)
-- [**Bazzite Command-Line Tools**](/Advanced/bazzite-cli.md)
-- [**Best Shell Practices**](/Advanced/Best_Shell_Practices.md)
-- [**Custom Resolutions**](/Advanced/custom_resolution.md)
-
-
-## System Administration
+# Advanced Guides
 
 - [**Auto-Mounting Secondary Drives**](/Advanced/Auto-Mounting_Secondary_Drives.md)
+- [**Managing Gamescope Using ScopeBuddy**](/Advanced/scopebuddy.md)
+- [**Custom Resolutions**](/Advanced/custom_resolution.md)
+- [**Bazzite Command-Line Tools**](/Advanced/bazzite-cli.md)
+- [**Using Looking-Glass**](/Advanced/looking-glass.md)
+- [**Best Shell Practices**](/Advanced/Best_Shell_Practices.md)
+- [**Installing Arctis Manager**](/Advanced/arctis-manager.md)
 - [**Booting to Rescue Mode**](/Advanced/rescue-and-emergency-mode.md)
 - [**Reset Forgotten User Password**](/Advanced/Reset_Forgotten_User_Password.md)
 - [**Using Swap for Additional Memory or Hibernation**](/Advanced/swapfile.md)

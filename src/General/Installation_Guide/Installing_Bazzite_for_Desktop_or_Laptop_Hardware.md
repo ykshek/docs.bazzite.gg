@@ -1,20 +1,15 @@
 ---
-authors:
-  - "@nicknamenamenick"
-  - "@KyleGospo"
-  - "@storyaddict"
-  - "@castrojo"
-  - "@noelmiller"
-  - "@rothgar"
-tags:
-  - Installation
+title: Installing Bazzite for Desktop Hardware
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=1146", "fetched_at": "2024-09-03 16:43:27.199924+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Installing Bazzite for Desktop Hardware
 
 ![Desktop|690x448](../../img/Desktop.jpeg)
+
+
+!!! Note
+      
+      This installation guide is for the **legacy ISO** and an updated guide for the new ISOs will be coming soon.
 
 ## Pre-Installation
 
@@ -23,9 +18,9 @@ tags:
 ### Minimum System Requirements
 
 - **Architecture**: x86_64
-- **Firmware**: UEFI (CSM Support should be **disabled** if available)
+- **Firmware**: UEFI (CSM/Legacy boot [**UNSUPPORTED**](../FAQ.md#does-bazzite-support-csmlegacy-boot))
 - **Processor (CPU)** : 2GHz quad core processor or better
-- **System Memory (RAM)**: 4GB
+- **System Memory (RAM)**: 8GB
 - **Graphics**: A graphics card that can utilize Vulkan 1.3+
 - **Storage**: 64GB free on an internal solid-state drive
 - **Network**: Stable internet connection with no bandwidth caps

@@ -1,27 +1,25 @@
 ---
-authors:
-  - "@HikariKnight"
-  - "@nicknamenamenick"
-tags:
-  -  Guide
+title: Looking Glass
 ---
+
+# Installing Looking Glass
 
 ## READ FIRST!
 [Looking-Glass](https://looking-glass.io/) is a very experimental project and is not ready for production use!
 This means there are no official packages for `looking-glass-client` yet. <br>
 For this reason we do not package or ship `looking-glass-client`, we only provide a working configuration and SELinux rules so that it can be used in Bazzite.
-We do however package the `kvmfr` kernel module and include it with the system image, as such file any issue with the `kvmfr` module in Bazzite to our discord or github issue tracker and ping @HikariKnight in the issue.
+We do however package the `kvmfr` kernel module and include it with the system image, as such file any issue with the `kvmfr` module in Bazzite to our Discord or Github issue tracker and make sure to ping @HikariKnight.
 
 We will only tell you to file an issue with Looking-Glass directly if the issue is not related to the packaging and configuration of the `kvmfr` module.
 
-## Enabling the kvmfr module
+## Enabling the KVMFR Module
 You can enable the kvmfr module by running this command:
 
 ```bash
 ujust setup-virtualization kvmfr
 ```
 
-## Compiling Looking-Glass client
+## Compiling Looking-Glass Client
 Create a `fedora:latest` distrobox that we will use to compile the binary, use the following command to make the container, when asked about what image to use, select the default one as I have verified this guide works with that image for building.
 This distrobox has to be made manually without the `--nvidia` flag which our ujust automatically applies to enable hardware acceleration, however we explicitly do not want it in order to make `cmake-data` successfully install.
 
@@ -45,7 +43,7 @@ When you get to the part for running `cmake`, use the command:
 ```
 cmake -DENABLE_WAYLAND=1 -DENABLE_X11=0 -DENABLE_PULSEAUDIO=0 -DENABLE_PIPEWIRE=1 ..
 ```
-The above command will disable X11 support and Pulseaudio support, but enable Pipewire and Wayland support, this will avoid any issues as we do not ship the X11 dependencies for `looking-glass`.
+The above command will disable X11 support and Pulseaudio support, but enable Pipewire and Wayland support, this will avoid any issues as Bazzite does not ship the X11 dependencies for `looking-glass`.
 
 Copy the built `looking-glass-client` binary to `/run/host/home/$USER/.local/bin/`
 You can do that using the following commands if you followed the looking-glass documentation.
@@ -53,8 +51,9 @@ You can do that using the following commands if you followed the looking-glass d
 mkdir /run/host/home/$USER/.local/bin
 cp ./looking-glass-client /run/host/home/$USER/.local/bin/
 ```
-7. Test and see if `looking-glass-client` binary works for you on the host with your VM running.
-8. Exit the container and run the below command to remove the container we used to build the Looking-Glass client.
+Test and see if `looking-glass-client` binary works for you on the host with your VM running.
+
+Exit the container and run the below command to remove the container we used to build the Looking-Glass client.
 ```bash
-distrobox stop tmp_lookingglass ; distrobox rm tmp_lookingglass
+distrobox stop tmp-lookingglass ; distrobox rm tmp-lookingglass
 ```

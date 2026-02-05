@@ -1,10 +1,8 @@
 ---
 title: "Best Shell Practices"
-authors:
-  - "@raddevon"
-tags:
-  -  Guide
 ---
+
+# Best Shell Practices
 
 ## Changing the default terminal shell
 

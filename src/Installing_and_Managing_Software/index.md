@@ -22,6 +22,9 @@ Fedora Atomic Desktops have read-only root files to prioritize stability.  There
 6. [**AppImage**](./AppImage.md) (_Portable Graphical Applications_) - Portable universal package format that relies on specific host libraries at a system-level, usually obtained from a project's website.
 7. [**`rpm-ostree`**](./rpm-ostree.md) (_System-Level Packages_) - Layer Fedora packages at a system-level (**not recommended, use as a last resort**)
 
+![](../img/software-install-decision-tree-light.svg#only-light)
+![](../img/software-install-decision-tree-dark.svg#only-dark)
+
 ## How do I run Windows applications?
 
 **Use a [WINE](https://www.winehq.org/) front-end**:

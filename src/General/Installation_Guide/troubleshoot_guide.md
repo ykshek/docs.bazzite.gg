@@ -15,10 +15,15 @@ tags:
 
 The "code 1" error is a generic error code that appears during installation when a more specific error message isn't available. This error can occur in several scenarios that we have identified so far but there may be more scenarios:
 
-- **Existing Fedora Installation:** If you've previously installed Nobara, Bazzite, or any Fedora-based OS on your drive, the installer might fail when writing the EFI entries because a "Fedora" folder already exists there.
-  - **Fix 1:** The video below explains one way to resolve this. <br> https://www.youtube.com/watch?v=GRdz08hJByo <br> In summary, you'll need to access the terminal, identify and mount the EFI system partition, remove the existing "Fedora" folder.
-  - **Fix2:** You can use manual partitioning as described in the [Dual Boot Setup Guide](./dual_boot_setup_guide.md#manual-partitioning-to-the-same-drive-for-dual-boot-setups) to create a new EFI partition.
-  - **Fix3:** If you are not dual-booting, follow the [Installing Bazzite for Desktop/Laptop Hardware guide](./Installing_Bazzite_for_Desktop_or_Laptop_Hardware.md) as removing everything on the drive will remove the EFI partition fixing the error
+- **Existing Linux Installation:** If you've previously installed another Linux on the same drive, the installer might fail when installing the bootloader with a 'bootloader write config' error.
+  - This can happen even if the previous Linux installation is no longer functional. It is known to occur with both **Fedora-based** (Fedora, Fedora Atomic, Bazzite, Nobara, etc.) and **Ubuntu-based** (Ubuntu, Mint, PopOS, etc.) distros.
+  - **Fix 1:** Separate drive: If your hardware supports more than 1 SSD, install Bazzite on a different drive that has not seen Linux before.
+  - **Fix 2:** Manually remove the existing Linux from the EFI: The video below explains one way to resolve this for a previous Fedora installation. <br> https://www.youtube.com/watch?v=GRdz08hJByo <br> In summary, you'll need to access the terminal, identify and mount the EFI system partition, remove the existing "Fedora" folder.
+    - This can be adapted to work with Ubuntu-based OSes by removing the 'ubuntu' folder instead of the 'fedora' folder
+  - **Fix 3:** Delete the existing EFI partition on the drive: If you are NOT planning on dual-booting, use GParted or Disks to remove the existing EFI.
+    - **Warning:** This is **irreversible** and will remove every other operating system on the drive, **including Windows**
+  - **Fix 4:** Create a new EFI partition: You can use manual partitioning as described in the [Manual Partitioning Guide](./manual_partitioning.md) to create a new EFI partition alongside the existing one to accomplish this.
+    - Warning: some BIOSes cannot handle a second EFI partition on the drive.
 - **Incorrect Filesystem:** Using the EXT4 or any other filesystem type for the root partition will cause this error. You must use BTRFS for the root partition.
 - **Corrupted ISO Image:** Ensure the ISO image isn't corrupted by calculating the checksums or using the official torrent when downloading Bazzite.
 - **Overheating USB Flash Drive:** Use a USB 3.0 or better flash drive and plug it into a USB 3.0 or better port to avoid overheating.
@@ -42,9 +47,11 @@ https://www.youtube.com/watch?v=VTnm9EiBdPA
 
 ## "Bad shim signature, you need to load the kernel first" error
 
-**Watch this video for a workaround**:
+![You need to load the kernel first](../../img/you-need-to-load-the-kernel-first.png)
 
-https://www.youtube.com/watch?v=Z_DsWqTuipU
+Disable Secure Boot in BIOS to get past this screen. If you wish to use Secure Boot, follow [the **Secure Boot Guide** using method B](/General/Installation_Guide/secure_boot.md)
+
+Video walkthrough: https://www.youtube.com/watch?v=Z_DsWqTuipU
 
 ## "Failed to open \EFI\BOOT\mmx64.efi - Not Found" error
 

@@ -54,7 +54,7 @@ tags:
 
 ### Contributing
 
-This page is a **wiki**, edit it to add any relevant information you may have regarding the handheld and your experience with Bazzite on it. Make sure to follow proper [contributing guidelines](/CONTRIBUTE.md) before adding any edits.
+This page is a **wiki**, edit it to add any relevant information you may have regarding the handheld and your experience with Bazzite on it. Make sure to follow proper [contributing guidelines](https://universal-blue.org/contributing.html) before adding any edits.
 
 <hr>
 

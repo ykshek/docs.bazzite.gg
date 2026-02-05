@@ -1,14 +1,14 @@
 ---
-title: Installation Guide
+title: Bazzite Installation Guide
 ---
-
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=30", "fetched_at": "2024-09-03 16:43:25.704918+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
 
 # Bazzite Installation Guide
 
-### **Important Installation Notes**:
+!!! Note
+      
+      This installation guide is for the **legacy ISO** and an updated guide for the new ISOs will be coming soon.
+
+## **Important Installation Notes**:
 
 - Use a download manager (like [**Motrix**](https://motrix.app/)) if the direct download fails or is downloading too slow.
 
@@ -39,7 +39,3 @@ title: Installation Guide
 ## Issues Installing Bazzite?
 
 Read the [**Troubleshooting Guide**](./troubleshoot_guide.md) for installation workarounds.
-
-<hr>
-
-<-- [**View all Bazzite documentation**](../../index.md)
