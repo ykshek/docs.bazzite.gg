@@ -76,7 +76,11 @@ Some games and emulators may need Steam Input **disabled** to work correctly wit
 
 ### Desktop Controls
 
-Virtual keyboard is Steam's keyboard, but needs to be setup in Steam's settings in Desktop Mode. There is **no default keybinding for Steam's on-screen keyboard** (Remap it to <kbd>**X**</kbd> or whatever you prefer).  Desktop controller layout may not exist by default if Steam doesn't setup your handheld controller properly. This can be fixed in Steam's controller settings
+![desktop_controls_step_1|588x500, 75%](../../img/handheld_desktop_controls_1.png)
+
+Desktop controller layout may not exist by default if Steam doesn't setup your handheld controller properly. This can be fixed in Steam's controller settings.
+
+The virtual keyboard is Steam's on-screen keyboard, but needs to be setup in Steam's settings in Desktop Mode. There is **no default keybinding for Steam's on-screen keyboard** (Remap it to <kbd>**X**</kbd> or whatever you prefer).  Desktop controller layout may not exist by default if Steam doesn't setup your handheld controller properly. This can be fixed in Steam's controller settings
 
 ## Decky Setup
 
