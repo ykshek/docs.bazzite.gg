@@ -12,5 +12,5 @@ title: OneXPlayer Handhelds
 
 ![onexplayer-x1|690x328, 100%](../../img/onexplayer-x1.jpeg)
 
-### Workarounds / Known Issues
+### Known Issues
 - Adjusting the vibration intensity is not supported yet
