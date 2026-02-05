@@ -28,7 +28,7 @@ Both SteamOS and Bazzite use Steam Gaming Mode and share packages between each o
 
 >If you want to see a more in-depth comparison, read our [**SteamOS comparison guide**](/General/SteamOS_Comparison.md).
 
-### Workarounds / Known Issues
+### Known Issues
 
 - (Steam Deck OLED) The brightness is not properly restored when changing refresh rate.
 - (Steam Deck OLED) MangoHUD does not report GPU clocks.
