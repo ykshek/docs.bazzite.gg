@@ -20,7 +20,7 @@ title: GPD Handhelds
 - Set a charge limit in HHD with Handheld Daemon
 - GPD devices also have a physical switch you can toggle to enable a separate desktop/mouse mode.
 
-### Workarounds / Known Issues
+### Known Issues
 
 - Suspend-resume fully works on the 6800u Win 4 after disabling the fingerprint scanner, but there are a few user reports of the 7840u and newer models having only partially working suspend-resume.
   - It seems to be very similar/related to the suspend issue on the GPD WM2 7840u and newer devices, more details [here](https://gitlab.freedesktop.org/drm/amd/-/issues/3154)
@@ -47,7 +47,7 @@ For more information, check out the [GPD Win Tips and Tricks guide](https://gith
 - Adjust the scaling of the UI in the Display Settings
 - Set a charge limit in HHD with Handheld Daemon
 
-### Workarounds / Known Issues
+### Known Issues
 
 - Suspend-resume works on the WM2 6800u model after disabling the fingerprint scanner, but 7840u and newer models have only partially working suspend-resume.
   - Read about the issue [here](https://gitlab.freedesktop.org/drm/amd/-/issues/3154) for details on suspend-resume issues for the newer WM2 devices.
