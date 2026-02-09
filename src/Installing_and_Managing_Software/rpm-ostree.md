@@ -10,13 +10,12 @@ title: Package Layering
 
     Layering packages irresponsibly can be **destructive** and may prevent updates as well as other issues until the layered packages are removed.
 
-Install [Fedora Linux packages](https://packages.fedoraproject.org/) by using the `rpm-ostree` terminal command.
+Install [Fedora Linux packages](https://packages.fedoraproject.org/) on top of the existing Bazzite image by using the `rpm-ostree` terminal command.  Use for packages that cannot be installed from Homebrew or ran inside of a container.  Layered packages can break system upgrades until removed due to dependency issues since the package will have to be updated with the rest of the image.  It also causes upgrades to take longer to run.
 
-### Key Features
+### Key Notes
 
-- This is known as "layering packages" to the image.
 - Layering packages will **require** a system reboot when it finishes creating the new deployment with the package(s) added to your image.
-- Use this method as a **last resort** and for anything at a "system-level" only.
+- Use this method as a **last resort** and for anything at a "system-level" only since it can pause updates, if the package contains dependency issues with future upgrades, until the package is uninstalled.
 
 ## Terminal Commands Related to Package Layering
 
