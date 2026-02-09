@@ -10,7 +10,7 @@ title: Installing and Managing Applications
 - [**Homebrew (`brew`)**]()
 - [**Containers**]()
     - [**Distrobox (Linux Package Managers)**]()
-    - [**Quadlet (SystemD Units and Podman)**]() 
+    - [**Quadlet (`systemd` and `podman` in Combination)**]() 
 - [**AppImage (Portable `.AppImage` Applications)**]()
 - [**Package Layering (`rpm-ostree`)**]()
 - [**Waydroid Setup Guide (Android Applications)**]()
