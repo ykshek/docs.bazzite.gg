@@ -1,14 +1,8 @@
 ---
-authors:
-  - "@nicknamenamenick"
-  - "@tired-runner"
-tags:
-  -  Software
+title: Homebrew
 ---
 
-<!-- ANCHOR: METADATA -->
-<!--{"url_discourse": "https://universal-blue.discourse.group/docs?topic=2639", "fetched_at": "2024-09-03 16:43:07.277727+00:00"}-->
-<!-- ANCHOR_END: METADATA -->
+# Homebrew
 
 ## What is Homebrew?
 
@@ -18,18 +12,14 @@ tags:
 
     Any package that requires root privileges will either need a rootful Distrobox container or has to be layered with `rpm-ostree`.
 
-Homebrew is a package manager that installs packages into their own prefix. It is primarily used for command-line interface (CLI) and terminal user interface (TUI) applications. Homebrew can also install graphical applications using the `--cask` flag, but most are for macOS as support for casks on Linux is still developing.
+Homebrew is a package manager that installs packages into their own prefix. It is primarily used for command-line interface (CLI) and terminal user interface (TUI) applications. Homebrew can also install graphical applications using the `--cask` flag, but most are for macOS as support for casks on Linux is still developing. Use the Bold Brew application or the terminal using the command below to install packages.
 
-Install packages in a host terminal with this **command**:
+Install packages in a host terminal with this **terminal command**:
 
 ```
 brew install <package>
 ```
 
-### Project Website
+## Project Website
 
 https://brew.sh/
-
-<hr>
-
-[ **← Back to Installing and Managing Software on Bazzite**](./index.md)
