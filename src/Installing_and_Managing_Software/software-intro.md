@@ -20,6 +20,7 @@ title: Introduction to Installing Software on Bazzite
 ### Package Format Recommendation Scenarios
 
 !!! note
+        
         Please note that only a small selection of software are available to install in the Bazzite Portal so it is not listed in this table.
 
 | **Package Format** | **Graphical Application (GUI)** | **Command‑Line / System‑Level Package** |
