@@ -8,7 +8,7 @@ title: Installing and Managing Applications
 - [**Bazzite Portal (`ujust`)**](./ujust.md)
 - [**Bazaar App Store (`flatpak`)**](./Flatpak.md)
 - [**Homebrew (`brew`)**](./Homebrew.md)
-- [**Containers**](<new page>)
+- [**Containers**](./Containers.md)
     - [**Distrobox (Linux Package Managers)**](./Distrobox.md)
     - [**Quadlet (`systemd` and `podman` in Combination)**](./Quadlet.md) 
 - [**AppImage (Portable `.AppImage` Applications)**](./AppImage.md)
