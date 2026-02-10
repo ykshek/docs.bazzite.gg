@@ -37,7 +37,7 @@ title: Introduction to Installing Software on Bazzite
 
 ## Other Software
 
-Bazzite can also run Windows and Android applications too!
+Bazzite can also run Windows and Android applications too!  Please note that not all software intended for Windows and Android will run on Bazzite.
 
 ### Windows Executables
 
