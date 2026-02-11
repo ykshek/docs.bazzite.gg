@@ -1,8 +1,8 @@
 ---
-title: ujust Commands
+title: `ujust` Commands & The Bazzite Portal 
 ---
 
-# `ujust` Commands
+# `ujust` Commands & The Bazzite Portal
 
 ## Usage
 
