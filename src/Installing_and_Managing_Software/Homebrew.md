@@ -22,7 +22,7 @@ brew install <package>
 
 ## Bold Brew
 
-<talk about it idk what it is>
+The Bold Brew application offers a terminal user interface (TUI) for installing common Homebrew packages.
 
 ## Project Website
 
