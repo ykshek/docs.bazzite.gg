@@ -41,14 +41,14 @@ ujust update
 
 ## Do I have to reboot immediately after every system update?
 
-**No**, but the **system upgrade will not apply until the next reboot**.  User-installed applications from Bazaar **will be upgraded without rebooting**.
+**No**, but the **system upgrade will not apply until the next reboot**.  User-installed applications from Bazaar **can be upgraded without rebooting**.
 
 - **Desktop images**: While your device is running, newer updates will still download in the background once a day, and will be waiting to be applied until the device is rebooted.
-- **Bazzite-Deck images**: Updates will be checked daily and can be downloaded at your leisure.
+- **Bazzite-Deck images**: Updates will be checked daily and can be downloaded at your leisure similar to how SteamOS handles upgrades.
 
-## Metered Connection?
+## Metered / Limited Network Connections & Data Caps
 
 !!! note
-    This is an unsupported configuration since Bazzite is expected to automatically update daily.
+    This is an unsupported configuration since updates are expected to be running daily for both the operating system and applications.
 
-Open the System Settings of your desktop environment and turn on the setting relating to a metered connection (Data caps or incur charges).  This will pause automatic updates for Bazzite.
+Open the System Settings of your desktop environment and turn on the setting relating to a metered connection (Data caps or incur charges).  This setting will **pause** automatic updates for Bazzite.
