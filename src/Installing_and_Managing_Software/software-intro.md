@@ -11,7 +11,7 @@ title: Introduction to Installing Software on Bazzite
 <small>This takes precedent over other formats but since it can only install only a small set of software, it is considered as an extension to system-level settings as opposed to an app store.</small>
 1. [**Bazaar App Store (Flatpak)**](./Flatpak.md) (_Graphical Applications_) - Universal package format using a permissions-based model and should be used for most graphical applications, **it is primary method of obtaining software on Bazzite**.
 2. [**Homebrew**](./Homebrew.md) (_Command-Line Tools_) - Install applications intended to run inside of the terminal (CLI/TUI).
-3. **Containers** -
+3. **[Containers](./Containers.md)** - Run applications in an isolated environment to avoid dependency issues.
     3a. [**Distrobox Containers**](./Distrobox.md) (_Linux Packages & Development Workflows_) - Access to most Linux package managers for software that do not support Flatpak and Homebrew and for use as development boxes.
     3b. [**Quadlet**](./Quadlet.md)  (_Services_) - Run containerized applications as a [systemd service](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-managing_services_with_systemd#sect-Managing_Services_with_systemd-Services).
 4. [**AppImage**](./AppImage.md) (_Portable Graphical Applications_) - Portable universal package format that relies on specific host libraries at a system-level, usually obtained from a project's website.
@@ -31,7 +31,7 @@ title: Introduction to Installing Software on Bazzite
 | **AppImage** | Find an AppImage online at your own risk from a trusted source. Use Gear Lever (available in Bazaar) for proper system integration. | — |
 | **Package Layering** | If none of the above options work, layer the package at your own risk. | Same as GUI: layer only if no other option works. |
 | **Other** | Some software ships as a `.tar.gz` with an executable. It *may* run on Bazzite after making it executable. Alternatively, use a Wine frontend (e.g., Lutris) for Windows versions. Waydroid may work if an Android port exists. | — |
-| **[Custom Image](link to docs)** | Intended for alternate desktop environments or software for unusual hardware; a custom Bazzite image may be required. | — |
+| **[Custom Image](link to docs)** | — | Intended for alternate desktop environments or software for unusual hardware; a custom Bazzite image may be required.  |
 
 <hr>
 
