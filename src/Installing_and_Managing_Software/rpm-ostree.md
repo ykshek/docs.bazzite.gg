@@ -147,3 +147,7 @@ If you run into issues upgrading due to a layered package conflict, then either 
 ```bash
 rpm-ostree reset
 ```
+
+## Project Website
+
+https://coreos.github.io/rpm-ostree/
