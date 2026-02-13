@@ -31,7 +31,7 @@ title: Introduction to Installing Software on Bazzite
 | **AppImage** | Find an AppImage online at your own risk from a trusted source. Use Gear Lever (available in Bazaar) for proper system integration. | — |
 | **Package Layering** | If none of the above options work, layer the package at your own risk. | Same as GUI: layer only if no other option works. |
 | **Other** | Some software ships as a `.tar.gz` with an executable. It *may* run on Bazzite after making it executable. Alternatively, use a Wine frontend (e.g., Lutris) for Windows versions. Waydroid may work if an Android port exists. | — |
-| **[Custom Image](link to docs)** | — | Intended for alternate desktop environments or software for unusual hardware; a custom Bazzite image may be required.  |
+| **[Custom Image](../Advanced/creating_custom_image.md)** | — | Intended for alternate desktop environments or software for unusual hardware; a custom Bazzite image may be required.  |
 
 <hr>
 
