@@ -14,6 +14,6 @@ AppImage is a universal package format that attempts to bundle dependencies that
 
 Applications installed as an AppImage can integrate with your desktop and be managed with [Gear Lever](https://github.com/mijorus/gearlever) which you can install in [Bazaar](./Flatpak.md).  Gear Lever will also check for new updates, but **upgrades will still need to be applied manually**. It is highly recommended to install Gear Lever to manage AppImages.
 
-### Project Website
+## Project Website
 
 https://appimage.org/
