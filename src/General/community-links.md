@@ -36,10 +36,17 @@ title: Community Resources
 - [**boxkit: Template to build your own OCI Distrobox container**](https://github.com/ublue-os/boxkit)
 - [**bazzite-arch: Gaming packages inside of a Distrobox container**](https://github.com/ublue-os/bazzite-arch)
 - [**DAWbox: An Ubuntu based OCI ready for music production, powered by Distrobox**](https://github.com/Messaiga/DAWbox)
+- [**ZeroTier Setup**](/General/zerotier.md)
+- [**Installing Arctis Manager**](/Advanced/arctis-manager.md)
 
 ## Bootable Container Topics
 
 - [**List of Bootable Container Images**](https://workshop.blue-build.org/images)
+- [**Bootcrew**](https://github.com/bootcrew)
+- [**secureblue**](https://github.com/secureblue/secureblue)
+- [**Blue95**](https://github.com/winblues/blue95)
+- [**Wayblue**](https://github.com/wayblueorg/wayblue)
+- [**HeliumOS**](https://www.heliumos.org/)
 - [**List of Community Created Custom Images**](https://universal-blue.discourse.group/t/list-of-community-created-custom-images/340)
 - [**Installing Universal Blue's Base Images**](https://universal-blue.discourse.group/t/how-to-install-universal-blues-base-images/868)
 - [**Self-Hosting Images**](https://github.com/ublue-os/forge)
