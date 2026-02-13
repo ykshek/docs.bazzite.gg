@@ -6,15 +6,11 @@ title: Update Guide
 
 ![System Updates|200x200, 100%](../../img/System_Updates.png)
 
-!!! attention
-
-    It is required to have **3% free storage of your total drive that Bazzite is installed on** to update properly.
-
 ## Updating Bazzite
 
 !!! attention
 
-    It is required to have **3% free storage of your total drive that Bazzite is installed on** to update properly.
+    It is required to have 3% free storage of your total drive that Bazzite is installed on to update properly.
 
 Bazzite updates all of the changes made specifically in Bazzite itself, updates from Fedora's base packages upstream, graphic drivers, and user software installed from Bazaar.
 
