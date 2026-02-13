@@ -35,3 +35,7 @@ Sometimes a project's website or [Github repository](<https://github.com/flathub
 ### Warehouse
 
 **Warehouse** is a utility that gives users a graphical interface to **downgrade applications**, install remote Flatpak sources outside of Flathub at your own risk, and backup application user data.
+
+## Project Website
+
+https://github.com/kolunmi/bazaar
