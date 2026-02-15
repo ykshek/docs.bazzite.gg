@@ -2,6 +2,8 @@
 title: Installing Arctis Manager
 authors:
   - "@rdamron"
+tags:
+  -  Community
 search:
   exclude: true
 ---
