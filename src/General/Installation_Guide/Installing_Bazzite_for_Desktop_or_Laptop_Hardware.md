@@ -1,5 +1,7 @@
 ---
 title: Installing Bazzite for Desktop Hardware
+search:
+  exclude: true
 ---
 
 # Installing Bazzite for Desktop Hardware
