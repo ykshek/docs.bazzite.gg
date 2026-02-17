@@ -1,5 +1,9 @@
 ---
 title: "ZeroTier Setup"
+authors:
+  - "@Zeglius"
+tags:
+  -  Community
 search:
   exclude: true
 ---

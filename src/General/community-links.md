@@ -43,7 +43,7 @@ title: Community Resources
 
 - [**List of Bootable Container Images**](https://workshop.blue-build.org/images)
 - [**Bootcrew**](https://github.com/bootcrew)
-- [**secureblue**](https://github.com/secureblue/secureblue)
+- [**secureblue**](https://secureblue.dev/)
 - [**Blue95**](https://github.com/winblues/blue95)
 - [**Wayblue**](https://github.com/wayblueorg/wayblue)
 - [**HeliumOS**](https://www.heliumos.org/)
