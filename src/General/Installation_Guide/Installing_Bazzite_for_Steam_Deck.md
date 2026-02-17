@@ -1,5 +1,7 @@
 ---
 title: Installing Bazzite on Steam Deck Hardware
+search:
+  exclude: true
 ---
 
 # Installing Bazzite on Steam Deck Hardware
