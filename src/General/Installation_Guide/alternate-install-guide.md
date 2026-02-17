@@ -2,9 +2,11 @@
 title: Alternative Installation Guide
 ---
 
+# Alternative Installation Guide
+
 !!! warning
 
-    This method may have scaling issues with the installer depending on the hardware especially if it is a handheld PC.
+    This method may have scaling issues with the installer depending on the hardware especially if it is handheld PC hardware.
 
 ## Rebasing from a Fedora Atomic Desktop Image
 
@@ -18,7 +20,7 @@ If you experience issues with installing our ISO or the bootable drive you have 
 
 4. Reboot when the rebase has finished, and Bazzite should be installed after rebooting and your username as well as the user password will carry over from the upstream Fedora Atomic Desktop to Bazzite.
 
-5. You will also be **missing the default applications**.
+5. You will also be **missing the default Flatpak applications unless you install them with the `ujust` command** below.
 
 ## Install Pre-Installed Flatpak Applications
 
@@ -28,12 +30,16 @@ Open the terminal and **enter this command**:
 ujust _install-system-flatpaks
 ```
 
-Choose the "Flathub" remote.  If it asks for "System" or "User" then choose "**System**" since that is the default remote for Bazzite.
+Choose the "**Flathub**" remote.  If it asks for "System" or "User" then choose "**System**" since that is the default remote for Bazzite.
 
 > **This command installs:**
 >
 > - [Flatpak applications for **KDE Plasma** images](https://github.com/ublue-os/bazzite/blob/9f6f5e143b7545d06803e70e7723997400bd8b88/system_files/desktop/kinoite/usr/share/ublue-os/bazzite/flatpak/install)
 > - [Flatpak applications for **GNOME** images](https://github.com/ublue-os/bazzite/blob/9f6f5e143b7545d06803e70e7723997400bd8b88/system_files/desktop/silverblue/usr/share/ublue-os/bazzite/flatpak/install)
+
+### Remove Fedora Flatpak Remote
+
+Please remove the Fedora Flatpak remote using the Warehouse application.  This will **not** remove userdata.
 
 ## Rebasing to a signed image
 
@@ -45,6 +51,6 @@ rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/<IMAGE>
 
 Replace **`<IMAGE>`** with the image you're using.
 
-### Video Tutorial
+## Video Tutorial
 
 https://www.youtube.com/watch?v=0NKEfVvdiOs
