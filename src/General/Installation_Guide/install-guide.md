@@ -33,4 +33,11 @@ Read the [**Hardware Compatibility Guide**](<link doc>) for Bazzite's system req
 ### Booting The Installer
 
 #### Network 
-...
+
+#### Select Language, Region, and Keyboard Layout
+
+#### Partitioning Options
+
+#### User Account Setup
+
+#### Reboot
