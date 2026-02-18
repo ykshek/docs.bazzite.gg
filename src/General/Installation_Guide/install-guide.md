@@ -42,7 +42,7 @@ Read the [**Hardware Compatibility Guide**](<link doc>) for Bazzite's system req
 
 #### Partitioning Options
 
-If you are dual-booting with Windows then read the [dualbooting guide](<link guide>)
+If you are dual-booting with Windows then read the [dualbooting guide](<link guide>).  Automatic partitioning is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then use the legacy ISO and follow the [manual partitioning guide](<link this>).
 
 #### User Account Setup
 
