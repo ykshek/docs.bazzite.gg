@@ -8,46 +8,19 @@ title: Legacy Installation Guide
 
 This guide is only for the legacy ISOs which are still supported at this time.
 
-## Minimum System Requirements
+## System Requirements
 
-- **Architecture**: x86_64
-- **Firmware**: UEFI (CSM/Legacy boot [**UNSUPPORTED**](../FAQ.md#does-bazzite-support-csmlegacy-boot))
-- **Processor (CPU)** : 2GHz quad core processor or better
-- **System Memory (RAM)**: 8GB
-- **Graphics**: A graphics card that can utilize Vulkan 1.3 or higher, modern AMD GPUs work the best
-- **Storage**: 64GB free on an internal **solid-state drive (SSD)**
-  - **External Storage & Secondary Drives**: All drives must be formatted as **BTRFS (SSDs)** or **Ext4 (Hard Disk Drives [HDDs])**, please backup the files and reformat them post-installation. 
-- **Network**: Stable internet connection with no bandwidth caps
-- **Additional Notes**: Certain peripherals are **not** compatible with Bazzite:
-  - **Wi-Fi Adapter Example** - [a list of **known compatible** USB Wi-Fi adapters](https://github.com/morrownr/USB-WiFi/blob/main/home/USB_WiFi_Adapters_that_are_supported_with_Linux_in-kernel_drivers.md)
+- Read the [**Hardware Compatibility Guide**](<link doc>) for Bazzite's system requirements.
+- Secure Boot and Trusted Platform Module (TPM) are supported on most hardware, but you must [**enroll our key during or after installation**](./secure_boot.md).
 
->[**The Hardware for Linux website**](https://linux-hardware.org/?view=computers) is a good indicator for how well OEM hardware is supported on the Linux desktop.
+### Installer Requirements
 
-## Steam Gaming Mode Requirements
-
-!!! note
-
-    These specific requirements only apply to [Bazzite-Deck images](/Handheld_and_HTPC_edition/Steam_Gaming_Mode.md) which ships with all handheld Bazzite ISO downloads.
-
-- Modern AMD GPU
-  - RX 4xx series and up
-    - 600M/700M integrated GPUs are also supported
-- Intel Arc GPUs are supported with **minor caveats** compared to AMD hardware
-- Nvidia GPU support is supported with [**major caveats**](/Handheld_and_HTPC_edition/quirks/#nvidia-exclusive-issues) compared to AMD hardware out of control of the Bazzite maintainers
-- Requires a [**Steam**](https://store.steampowered.com/) account
-  - Signing up for an account can be done post-installation if you don't have one already
-
-## Installer Requirements
-
-- Software to flash the ISO like [**Fedora Media Writer**](https://fedoraproject.org/mediawriter)
+- A way to download the Bazzite ISO
+  - A download manager (like [**Motrix**](https://motrix.app/)) if the direct download for the Bazzite ISO fails or is downloading too slow.
+- A 16GB+ bootable medium like a Flash Drive
+  - Software to flash the ISO like **Fedora Media Writer** ([**Windows/macOS**](https://github.com/FedoraQt/MediaWriter/releases) or [**Linux**](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
 - A physical wired keyboard is **recommended** and **required for devices without a touchscreen**.
-  - A User Account with a **username** and a **user password** if you have a keyboard if you want to setup a unique username and a password. 
-
-## Secure Boot Information
-
-Secure Boot is supported on most hardware, but you must [**enroll our key**](./secure_boot.md).
-
-<explain that it might be better to turn it off before proceeding>
+  - Otherwise, create a User Account with a **username** and a **user password** if you have a keyboard.
 
 ## Desktop Environments
 
