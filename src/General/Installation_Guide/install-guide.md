@@ -4,6 +4,10 @@ title: Bazzite Installation Guide
 
 # Bazzite Installation Guide
 
+## Video Walkthrough
+
+<link Wolfyreload's video>
+
 ## Preliminary Setup
 
 ### **Important Installation Notes**:
@@ -38,6 +42,12 @@ Read the [**Hardware Compatibility Guide**](<link doc>) for Bazzite's system req
 
 #### Partitioning Options
 
+If you are dual-booting with Windows then read the [dualbooting guide](<link guide>)
+
 #### User Account Setup
 
 #### Reboot
+
+## Post-Installation
+
+<link guide>
