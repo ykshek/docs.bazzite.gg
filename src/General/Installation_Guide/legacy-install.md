@@ -6,7 +6,7 @@ title: Legacy Installation Guide
 
 ## For Legacy ISOs Only
 
-This guide is only for the legacy ISOs which are still supported for ... (why???)
+This guide is only for the legacy ISOs which are still supported at this time.
 
 ## Minimum System Requirements
 
