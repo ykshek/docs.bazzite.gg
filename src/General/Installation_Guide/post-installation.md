@@ -24,6 +24,12 @@ title: Post-Installation Setup
 
 ### Configure your system with the Bazzite Portal application
 
+<screenshot the bazzite portal>
+
 ### Install additional software with the Bazaar app store
 
+![Screenshot of the Bazaar app store|1649x1274, 50%](../img/Bazaar.png)
+
 ### Play video games
+
+<link gaming guide>
