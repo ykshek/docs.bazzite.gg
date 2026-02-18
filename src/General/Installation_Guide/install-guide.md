@@ -93,6 +93,8 @@ More information can be found on our [FAQ](https://faq.bazzite.gg) about the dif
 
 <screenshot of live ISO connecting to Wi-Fi symbol on KDE image>
 
+Please note that an internet is not required to install Bazzite, but is useful if you're testing Bazzite before testing in the live environment.
+
 #### Select Language, Region, and Keyboard Layout
 
 <screenshot installer>
