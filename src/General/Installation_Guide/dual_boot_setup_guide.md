@@ -1,5 +1,7 @@
 ---
 title: Dual Boot Preliminary and Post-Installation Setup Guide
+search:
+  exclude: true
 ---
 
 # Dual Boot Preliminary and Post-Installation Setup Guide
