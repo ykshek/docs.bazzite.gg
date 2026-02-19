@@ -13,6 +13,7 @@ title: Post-Installation Setup
 ![Display Settings (GNOME)|690x344, 75%](../../img/GNOME_Display_Settings.png)
 **_GNOME's Settings application_**
 
+Adjust the system settings to your preference.
 
 ### Bazzite-Deck Images
 
