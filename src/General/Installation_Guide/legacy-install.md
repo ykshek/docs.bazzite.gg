@@ -10,7 +10,7 @@ This guide is only for the legacy ISOs which are still supported at this time.
 
 ## System Requirements
 
-- Read the [**Hardware Compatibility Guide**](<link doc>) for Bazzite's system requirements.
+- Read the [**Hardware Compatibility Guide**](./Gaming/Hardware_compatibility_for_gaming.md) for Bazzite's system requirements.
 - Secure Boot and Trusted Platform Module (TPM) are supported on most hardware, but you must [**enroll our key during or after installation**](./secure_boot.md).
 
 ### Installer Requirements
@@ -22,14 +22,14 @@ This guide is only for the legacy ISOs which are still supported at this time.
 - A physical wired keyboard is **recommended** and **required for devices without a touchscreen**.
   - Otherwise, create a User Account with a **username** and a **user password** if you have a keyboard.
 
-## Desktop Environments
+### Desktop Environments
 
-All of the images come with the choice of [KDE Plasma](https://kde.org/plasma-desktop/) or
-[GNOME](https://www.gnome.org/) for their desktop environment.
+All of the images come with the choice of [**KDE Plasma**](https://kde.org/plasma-desktop/) or
+[**GNOME**](https://www.gnome.org/) for their desktop environment.
 
-[Steam Gaming Mode](https://github.com/KyleGospo/gamescope-session) is an option and is recommended for HTPC setups.
+[**Steam Gaming Mode**](https://github.com/KyleGospo/gamescope-session) is an option as an additional session to run on top of KDE Plasma or GNOME but is only recommended for Home Theatre PC (HTPC) and handheld setups.
 
-More information can be found on our [FAQ](https://faq.bazzite.gg) about the differences between the image variants.
+More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the differences between the image variants.
 
 === "KDE Plasma"
 
@@ -69,13 +69,13 @@ More information can be found on our [FAQ](https://faq.bazzite.gg) about the dif
     - Included in the [Bazzite-Deck images](/Handheld_and_HTPC_edition/Steam_Gaming_Mode.md)
     - Interface is designed for handheld and couch gaming
     - Controller friendly
-    - Choice of KDE Plasma or GNOME in Desktop Mode
-    - Extra functionality with [Decky](https://github.com/SteamDeckHomebrew/decky-loader) [plugins](https://plugins.deckbrew.xyz/)
+    - Choice of KDE Plasma or GNOME as the Desktop Mode session
+    - Extra functionality with [Decky plugins](https://github.com/SteamDeckHomebrew/decky-loader) [(See all plugins)](https://plugins.deckbrew.xyz/)
 
     {% endblock %}
 
 
-## Installing Bazzite
+## Legacy ISO Walkthrough
 
 https://www.youtube.com/watch?v=KAt49B6rSFI
 
