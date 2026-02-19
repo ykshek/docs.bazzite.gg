@@ -146,4 +146,4 @@ Please wait for Bazzite to install.  This may take a while.
 
 ## Post-Installation
 
-<link guide>
+Bazzite is now installed. Read the [**Post-Installation Guide**](<link guide>) for recommended next steps or start gaming!
