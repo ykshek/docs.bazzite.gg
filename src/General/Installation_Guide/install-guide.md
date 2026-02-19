@@ -69,8 +69,8 @@ More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the
     - Included in the [Bazzite-Deck images](/Handheld_and_HTPC_edition/Steam_Gaming_Mode.md)
     - Interface is designed for handheld and couch gaming
     - Controller friendly
-    - Choice of KDE Plasma or GNOME in Desktop Mode
-    - Extra functionality with [Decky](https://github.com/SteamDeckHomebrew/decky-loader) [plugins](https://plugins.deckbrew.xyz/)
+    - Choice of KDE Plasma or GNOME as the Desktop Mode session
+    - Extra functionality with [Decky plugins](https://github.com/SteamDeckHomebrew/decky-loader) [(See all plugins)](https://plugins.deckbrew.xyz/)
 
     {% endblock %}
 
@@ -89,7 +89,15 @@ More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the
 
 ### Booting The Installer
 
+#### GRUB Menu
+
 ![boot|100%](../../img/live-installer-grub.png)
+
+#### Live Installer
+
+![live|100%](../../img/live-installer-opening.png)
+
+
 
 #### Network 
 
@@ -124,7 +132,17 @@ If you are dual-booting with Windows then read the [dualbooting guide](<link gui
 
     It is not recommended to enable a root account.
 
+### Installing Bazzite
+
+Please wait for Bazzite to install.  This may take a while.
+
+![installing|100%](../../img/live-installer-installing.png)
+
+
 #### Reboot
+
+![reboot|100%](../../img/live-installer-installed.png)
+
 
 ## Post-Installation
 
