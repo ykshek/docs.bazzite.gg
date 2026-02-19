@@ -145,7 +145,7 @@ Please wait for Bazzite to install.  This may take a while.
 ![reboot|100%](../../img/live-installer-installed.png)
 
 
-##### Secure Boot
+## Secure Boot
 
 ## Post-Installation
 
