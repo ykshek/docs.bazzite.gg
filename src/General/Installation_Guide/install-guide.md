@@ -129,6 +129,8 @@ If you are dual-booting with Windows then read the [dualbooting guide](<link gui
 
 ^^^this should be a comment but maybe just have dualboot guide here and have the other one be the legacy one? idk.... ahhhhhhh... maybe secure boot guide should part of this too?
 
+##### Disk Encryption
+
 #### User Account Setup
 
 ![installer2|1288x1050, 62%](../../img/live-installer-user-setup.png)
