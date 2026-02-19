@@ -115,14 +115,13 @@ Please note that an internet is not required to install Bazzite, but is useful i
 
     Make sure to only select the appropriate drives to avoid losing data on others, and it is best practice to safely remove any external drives before proceeding.
 
-If you are dual-booting with Windows then read the [dualbooting guide](<link guide>).  Automatic partitioning is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then use the legacy ISO and follow the [manual partitioning guide](<link this>).
-
-^^^this should be a comment but maybe just have dualboot guide here and have the other one be the legacy one? idk.... ahhhhhhh... maybe secure boot guide should part of this too?
-
 !!! note
 
      The "format as efi" button when dual-booting says it will format the Windows EFI, but what it actually does is add itself to the EFI. This is an upstream bug with the installer.
 
+If you are dual-booting with Windows then read the [dualbooting guide](<link guide>).  Automatic partitioning is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then use the legacy ISO and follow the [manual partitioning guide](<link this>).
+
+^^^this should be a comment but maybe just have dualboot guide here and have the other one be the legacy one? idk.... ahhhhhhh... maybe secure boot guide should part of this too?
 
 #### User Account Setup
 
