@@ -1,5 +1,5 @@
 ---
-title: Legacy Installation Guide
+title: Legacy ISO Installation Guide
 ---
 
 # Legacy ISO Installation Guide
