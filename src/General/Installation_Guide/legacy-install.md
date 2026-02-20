@@ -11,7 +11,7 @@ This guide is only for the legacy ISOs which are still supported at this time.
 ## System Requirements
 
 - Read the [**Hardware Compatibility Guide**](./Gaming/Hardware_compatibility_for_gaming.md) for Bazzite's system requirements.
-- Secure Boot and Trusted Platform Module (TPM) are supported on most hardware, but you must [**enroll our key during or after installation**](./secure_boot.md).
+- Secure Boot and Trusted Platform Module (TPM) are supported on most hardware, but you must **enroll our key during or after installation**.
 
 ### Installer Requirements
 
@@ -98,7 +98,7 @@ https://www.youtube.com/watch?v=wUDbMJtR1sM
     - Alternatively change the BIOS settings to boot with your bootable device first before your current storage, but this is **not recommended** to keep enabled after installing Bazzite.
 - Verify the media correctly and proceed to the installer.
 
-#### Handheld Users
+#### Handheld Devices
 
 Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and when you hear the chime, let go of both buttons, and you'll be booted into the Boot Manager. When you get to the boot menu, select your bootable device to boot into the Bazzite installer.
 
@@ -106,7 +106,7 @@ Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and whe
 
 !!! note "Installing Bazzite without a physical keyboard connected to your device:"
 
-    If you do not have a usb physical keyboard connected, do **NOT** press "_User Creation_", since it will remove the default username and password, and you will be unable to type a username or password without a physical keyboard.
+    If you do not have a USB physical keyboard connected, do **NOT** press "_User Creation_", since it will remove the default username and password, and you will be unable to type a username or password without a physical keyboard.
 
     **default user**: `bazzite`
     **default password**: `bazzite`
