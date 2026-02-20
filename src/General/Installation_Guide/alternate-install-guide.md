@@ -22,6 +22,12 @@ If you experience issues with installing our ISO or the bootable drive you have 
 
 5. You will also be **missing the default Flatpak applications unless you install them with the `ujust` command** below.
 
+## Secure Boot Instructions When Rebasing From Upstream Fedora Atomic Desktop images
+
+Rebasing from Fedora Silverblue, Fedora Kinoite, etc. to Bazzite.
+
+If you're rebasing from a Fedora Atomic Desktop image and use Secure Boot, then follow the instructions found in [**Bazzite's README**](https://github.com/ublue-os/bazzite/blob/main/README.md#secure-boot).
+
 ## Install Pre-Installed Flatpak Applications
 
 Open the terminal and **enter this command**:
