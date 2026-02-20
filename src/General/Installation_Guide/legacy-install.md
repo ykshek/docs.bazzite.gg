@@ -6,7 +6,7 @@ title: Legacy ISO Installation Guide
 
 ## For Legacy ISOs Only
 
-This guide is only for the legacy ISOs which are still supported at this time.
+This guide is only for the legacy ISOs which are still supported at this time due to the new installer not supporting manual partitioning and some small bugs that are still present.
 
 ## System Requirements
 
