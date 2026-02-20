@@ -136,17 +136,29 @@ Please note that an internet is not required to install Bazzite, but is useful i
 
     Make sure to only select the appropriate drives to avoid losing data on others, and it is best practice to safely remove any external drives before proceeding.
 
+![drive|1273x1038, 63%](../../img/live-installer-drive.png)
+
+
+![partitioning|1283x1042, 62%](../../img/live-installer-partitions.png)
+
+
 ##### Dual Booting
 
 !!! note
 
      The "format as efi" button when dual-booting says it will format the Windows EFI, but what it actually does is add itself to the EFI. This is an upstream bug with the installer.
 
+![dualboot|1773x1247, 52%](../../img/live-installer-dualboot.png)
+
+
 If you are dual-booting with Windows then read the [dualbooting guide](<link guide>).  Automatic partitioning is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then use the legacy ISO and follow the [manual partitioning guide](<link this>).
 
 ^^^this should be a comment but maybe just have dualboot guide here and have the other one be the legacy one? idk.... ahhhhhhh... maybe secure boot guide should part of this too?
 
 ##### Disk Encryption
+
+![installing|1284x1045, 62%](../../img/live-installer-storage-encryption.png)
+
 
 #### User Account Setup
 
@@ -172,12 +184,5 @@ Please wait for Bazzite to install.  This may take a while.
 ## Post-Installation
 
 Bazzite is now installed. Read the [**Post-Installation Guide**](<link guide>) for recommended next steps or start gaming!
-
---- other images (fix resolutions and scaling BEFORE moving them!)
-
-![installing|1283x1042, 62%](../../img/live-installer-partitions.png)
-![installing|1773x1247, 52%](../../img/live-installer-dualboot.png)
-![installing|1273x1038, 63%](../../img/live-installer-drive.png)
-![installing|1284x1045, 62%](../../img/live-installer-storage-encryption.png)
 
 
