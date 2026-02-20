@@ -83,6 +83,12 @@ More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the
 
 <explain what each of these buttons mean for more context>
 
+Download the Bazzite ISO of your choice. Choose the hardware you plan to install Bazzite on, the vendor of your primary GPU, the desktop environment of your choice, and if you want Steam Gaming Mode (Bazzite-Deck version of Bazzite intended for HTPC and handheld hardware).
+
+### Calculating ISO SHA256 Checksum Hash
+
+https://www.youtube.com/watch?v=wUDbMJtR1sM
+
 ### Flash ISO
 
 ![flash|771x623, 70%](../../img/live-installer-fedora-media-writer-1.png)
@@ -90,6 +96,17 @@ More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the
 
 
 ### Booting The Installer
+
+- Connect your bootable medium to your device and boot into it.
+- After connecting the device, boot into the Bazzite installer.
+- This depends on your motherboard hardware, but most of the time it could be a function keys like <kbd>F9</kbd> or similar.
+  - Sometimes you need to consult the manual, look up your device online, or read any hotkeys that appear when you boot your PC.
+    - Alternatively change the BIOS settings to boot with your bootable device first before your current storage, but this is **not recommended** to keep enabled after installing Bazzite.
+- Verify the media correctly and proceed to the installer.
+
+#### Handheld Devices
+
+Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and when you hear the chime, let go of both buttons, and you'll be booted into the Boot Manager. When you get to the boot menu, select your bootable device to boot into the Bazzite installer.
 
 #### GRUB Menu
 
