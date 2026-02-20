@@ -147,10 +147,34 @@ Please note that an internet is not required to install Bazzite, but is useful i
 
 ![dualboot|1773x1247, 52%](../../img/live-installer-dualboot.png)
 
+If you are dual-booting with Windows then use automatic partitioning as it is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then use the legacy ISO and follow the [legacy ISO installation guide](<link this>).
 
-If you are dual-booting with Windows then read the [dualbooting guide](<link guide>).  Automatic partitioning is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then use the legacy ISO and follow the [manual partitioning guide](<link this>).
+1. Installing Bazzite with a shared drive.
+2. Installing Bazzite on a separate drive.
 
-^^^this should be a comment but maybe just have dualboot guide here and have the other one be the legacy one? idk.... ahhhhhhh... maybe secure boot guide should part of this too?
+=== "Shared Drive (Automatic Partitioning)"
+
+    1. (In Windows) Disable **Bitlocker encryption** and **fastboot**, and reboot.
+    2. (In Windows) Resize the Windows partition with the Disk Management app to have enough space for Bazzite.
+    Usually should look something like this:
+    ![](/img/dualbooting_partitions_windows.png)]
+    <i><small>Source: [diskpart.com](https://www.diskpart.com/windows-10/windows-10-disk-management-0528.html)</small></i>
+    3. Run the Bazzite installer with the automatic partitioning option.
+    4. Reboot into Bazzite and run `ujust regenerate-grub` in the terminal to add Windows to the GRUB.
+
+=== "Separate Drive"
+
+    **When a dedicated drive is feasible, this method is recommended.**
+
+    Install Bazzite on a separate internal or external drive.
+
+    1. Install the other operating system on a drive (like Windows).
+    2. Install Bazzite on a **second** drive.
+    3. Set Bazzite as the **default** in your boot order (optional).
+
+    If you install Windows second, you should disconnect the Bazzite drive to prevent using the Windows installer of using its EFI partition.
+
+    You can also install Windows to an external drive with Windows-to-Go using [Rufus](https://rufus.ie/en/) to dual boot if you do not have an internal drive available.
 
 ##### Disk Encryption
 
