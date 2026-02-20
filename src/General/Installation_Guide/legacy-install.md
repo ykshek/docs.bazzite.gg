@@ -326,14 +326,6 @@ On the next boot, you will see the blue MokManager screen:
 
 After the reboot, the key is enrolled and Secure Boot can remain enabled. Your system should now boot normally under Secure Boot.
 
-### Rebasing From Upstream Fedora Atomic Desktop images
-
-Rebasing from Fedora Silverblue, Fedora Kinoite, etc. to Bazzite.
-
-If you're rebasing from a Fedora Atomic Desktop image and use Secure Boot, then follow the instructions found in [**Bazzite's README**](https://github.com/ublue-os/bazzite/blob/main/README.md#secure-boot).
-
->[**Read more about rebasing from upstream Fedora Atomic Desktop images.**](/General/Installation_Guide/alternate-install-guide.md)
-
 ## **Troubleshooting Installation**:
 
 Read the [**Troubleshooting Guide**](./troubleshoot_guide.md) or the [**Alternative Installation Guide**](./alternate-install-guide.md) for installation workarounds.
