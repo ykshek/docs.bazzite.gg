@@ -1,5 +1,7 @@
 ---
 title: Installing Bazzite for HTPC Hardware
+tags:
+  -  Obsolete
 search:
   exclude: true
 ---
