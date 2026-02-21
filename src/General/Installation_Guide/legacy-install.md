@@ -144,7 +144,6 @@ For dual booting on **separate** drives:
 
 Use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
 
-
 ### Dual-Booting Windows
 
 1. Installing Bazzite with a shared drive.
@@ -190,7 +189,7 @@ If you install Windows after Bazzite, you can restore Bazzite's bootloader with 
 
 !!! warning "Only users who are dual booting on the same drive should use these instructions. Automatic partitioning is preferred in other cases."
 
-!!! warning "Bazzite only supports the BTRFS filesystem for `/`."
+!!! attention "Bazzite only supports the BTRFS filesystem for `/`."
 
 If you need a tutorial video for manual partitioning, watch this [tutorial at timestamp 9:10](https://www.youtube.com/watch?v=JxPsKhJGTrs&t=550s).
 
@@ -244,6 +243,8 @@ If you need a tutorial video for manual partitioning, watch this [tutorial at ti
 
 ## Secure Boot
 
+Bazzite supports Secure Boot however Universal Blue's key must be enrolled to use it otherwise keeping Secure Boot on in your BIOS will result in Bazzite not booting.
+
 ### Notes and Gotcha
 
 ![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
@@ -273,9 +274,9 @@ Press any key to continue...
 
 Follow **Method B** below to resolve this and move past the error message if you encounter it.
 
-## Using Secure Boot with Bazzite
+### Using Secure Boot with Bazzite
 
-### **Method A**) During Installation Method (See Image Above)
+#### **Method A**) During Installation Method (See Image Above)
 
 !!! note
 
@@ -291,7 +292,7 @@ universalblue
 
 Otherwise `Continue boot` if you have Secure Boot disabled or if it is not supported with your hardware.
 
-### **Method B**) After Installation Method
+#### **Method B**) After Installation Method
 
 **Disable Secure Boot in the BIOS before proceeding**, and then re-enable it **after enrolling the key**.
 
