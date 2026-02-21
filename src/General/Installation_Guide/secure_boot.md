@@ -1,5 +1,7 @@
 ---
 title: Secure Boot Guide
+tags:
+  -  Obsolete
 search:
   exclude: true
 ---
