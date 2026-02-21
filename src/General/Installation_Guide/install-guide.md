@@ -74,10 +74,7 @@ More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the
 
     {% endblock %}
 
-
-## Installation Walkthrough
-
-### Download Bazzite
+## Download Bazzite
 
 ![download|1871x856, 60%](../../img/live-installer-download.png)
 
@@ -89,13 +86,13 @@ Download the Bazzite ISO of your choice. Choose the hardware you plan to install
 
 https://www.youtube.com/watch?v=wUDbMJtR1sM
 
-### Flash ISO
+## Flash ISO
 
 ![flash|771x623, 70%](../../img/live-installer-fedora-media-writer-1.png)
 ![flash|771x723, 70%](../../img/live-installer-fedora-media-writer-2.png)
 
 
-### Booting The Installer
+## Booting The Installer
 
 - Connect your bootable medium to your device and boot into it.
 - After connecting the device, boot into the Bazzite installer.
@@ -104,27 +101,29 @@ https://www.youtube.com/watch?v=wUDbMJtR1sM
     - Alternatively change the BIOS settings to boot with your bootable device first before your current storage, but this is **not recommended** to keep enabled after installing Bazzite.
 - Verify the media correctly and proceed to the installer.
 
-#### Handheld Devices
+### Handheld Devices
 
 Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and when you hear the chime, let go of both buttons, and you'll be booted into the Boot Manager. When you get to the boot menu, select your bootable device to boot into the Bazzite installer.
 
-#### GRUB Menu
+## GRUB Menu
 
 ![boot|1573x872, 50%](../../img/live-installer-grub.png)
 
-#### Live Installer
+Upon booting for the first time...
+
+## Live Installer
 
 ![live|1431x897, 60%](../../img/live-installer-opening.png)
 
+Play around with it...
 
-
-#### Network 
+## Network Setup
 
 ![network|495x593, 100%](../../img/live-installer-network.png)
 
 Please note that an internet is not required to install Bazzite, but is useful if you're testing Bazzite before testing in the live environment.
 
-#### Select Language, Region, and Keyboard Layout
+## Select Language, Region, and Keyboard Layout
 
 ![installer1|1295x1054, 62%](../../img/live-installer-language.png)
 
@@ -139,32 +138,31 @@ Please note that an internet is not required to install Bazzite, but is useful i
 ![drive|1273x1038, 63%](../../img/live-installer-drive.png)
 
 
-##### Dual Booting
+## Dual Booting
 
 ![dualboot|1773x1247, 52%](../../img/live-installer-dualboot.png)
-
-
-!!! note
-
-     The "format as efi" button when dual-booting says it will format the Windows EFI, but what it actually does is add itself to the EFI. This is an upstream bug with the installer.
 
 !!! note
 
     Skip this section if you plan to install Bazzite without dual-booting Windows.
 
-##### Note about dual booting other Linux operating systems
+!!! warning
 
-For Fedora Atomic Desktop images on the **same** drive: to dual boot another **Fedora Atomic Desktop image** (like [Bluefin](https://projectbluefin.io/)) installed alongside Bazzite, you must make an additional EFI partition and switch between them through your motherboard's UEFI boot menu.
+     The "format as efi" button when dual-booting says it will format the Windows EFI, but what it actually does is add itself to the EFI. This is an upstream bug with the installer.
 
-For dual booting on **separate** drives:
+### Dual-booting other Linux operating systems
 
 !!! note 
 
     Dual booting with **other Linux distributions**, especially **non-atomic Fedora**, is not officially supported. It is recommended to use your motherboard's UEFI boot menu or to forgo dual booting entirely to avoid unexpected issues. If something does go wrong, restore Bazzite's bootloader using the **Bootloader Restoring Tool** in the Live ISO.
 
+For Fedora Atomic Desktop images on the **same** drive: to dual boot another **Fedora Atomic Desktop image** (like [Bluefin](https://projectbluefin.io/)) installed alongside Bazzite, you must make an additional EFI partition and switch between them through your motherboard's UEFI boot menu.
+
+For dual booting on **separate** drives:
+
 Use your motherboard's UEFI boot menu as the GRUB bootloader may not recognize each boot entry correctly.
 
-If you are dual-booting with Windows then use automatic partitioning as it is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then use the legacy ISO and follow the [legacy ISO installation guide](<link this>).
+If you are dual-booting with Windows then use automatic partitioning as it is the only option available in the live ISO, but it should work for most people's dual-booting usecases.  If you require manual partitioning, then download the legacy ISO and follow the [legacy ISO installation guide](<link this>).
 
 1. Installing Bazzite with a shared drive.
 2. Installing Bazzite on a separate drive.
@@ -193,12 +191,12 @@ If you are dual-booting with Windows then use automatic partitioning as it is th
 
     You can also install Windows to an external drive with Windows-to-Go using [Rufus](https://rufus.ie/en/) to dual boot if you do not have an internal drive available.
 
-##### Disk Encryption
+## Disk Encryption
 
 ![installing|1284x1045, 62%](../../img/live-installer-storage-encryption.png)
 
 
-#### User Account Setup
+## User Account Setup
 
 ![installer2|1288x1050, 62%](../../img/live-installer-user-setup.png)
 
@@ -206,7 +204,7 @@ If you are dual-booting with Windows then use automatic partitioning as it is th
 
     It is not recommended to enable a root account.
 
-### Installing Bazzite
+## Installing Bazzite
 
 Please wait for Bazzite to install.  This may take a while.
 
@@ -215,7 +213,7 @@ Please wait for Bazzite to install.  This may take a while.
 ![partitioning|1283x1042, 62%](../../img/live-installer-partitions.png)
 
 
-#### Reboot
+## Reboot
 
 ![reboot|1288x1040, 62%](../../img/live-installer-installed.png)
 
