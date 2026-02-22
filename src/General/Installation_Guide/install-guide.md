@@ -115,7 +115,7 @@ Upon booting for the first time...
 
 ![live|1431x897, 60%](../../img/live-installer-opening.png)
 
-Play around with it...
+Bazzite's live installer session lets you view the desktop applications pre-installed and get familiar with the UI/UX of it.  Please do not attempt to game on the live session since performance will not be accurate to when it is properly installed onto your drive.
 
 ## Network Setup
 
@@ -203,6 +203,8 @@ If you are dual-booting with Windows then use automatic partitioning as it is th
 !!! warning
 
     It is not recommended to enable a root account.
+
+An on-screen keyboard exists...
 
 ## Installing Bazzite
 
