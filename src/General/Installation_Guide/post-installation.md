@@ -14,7 +14,16 @@ Read more about this in the [Updates, Rollback, and Rebasing documentation](../.
 
 It is important to configure the system settings on a first boot to personalize your desktop especially if you notice the scaling is incorrect on first-boot.
 
-## Configure system settings
+## Setting Up Steam Gaming Mode (Bazzite-Deck Images Only)
+
+![Gaming Mode Setup|1920x1080, 50%](../../img/deck-edition.png)
+
+If you selected to use Steam Gaming Mode before downloading the ISO, then you will be on the Bazzite-Deck version.  After completing all of the above, then your next boot will be in Steam Gaming Mode which requires additional setup for Steam.
+
+>[Read the Bazzite-Deck documentation](../../Handheld_and_HTPC_edition/index.md)
+
+
+## Configure System Settings
 
 ### Scaling Settings
 
@@ -32,15 +41,6 @@ Adjust the system settings to your preference.
 ![KDE Plasma's Change Password|584x500, 75%](../../img/change-pass.png)
 
 Change it in the settings of Desktop Mode under the "User" category.
-
-### Setting Up Steam Gaming Mode (Bazzite-Deck Only)
-
-![Gaming Mode Setup|690x442, 50%](../../img/pLvHB1NAMlb3ghsR72q7l9Auj8B.jpeg)
-^^^GET A NEW IMAGE THIS ONE IS BAD!
-
-After completing all of the above, then your next boot will be in Steam Gaming Mode which requires additional setup for Steam.
-
->[Read the Bazzite-Deck documentation](<link>)
 
 ## Dual Boot Post-Configuration Setup
 
