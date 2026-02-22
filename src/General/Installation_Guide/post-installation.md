@@ -20,7 +20,7 @@ It is important to configure the system settings on a first boot to personalize 
 
 If you selected to use Steam Gaming Mode before downloading the ISO, then you will be on the Bazzite-Deck version.  After completing all of the above, then your next boot will be in Steam Gaming Mode which requires additional setup for Steam.
 
->[Read the Bazzite-Deck documentation](../../Handheld_and_HTPC_edition/index.md)
+>[Read the **Bazzite-Deck documentation**](../../Handheld_and_HTPC_edition/index.md) for more information on the HTPC/Handheld images.
 
 
 ## Configure System Settings
@@ -86,4 +86,4 @@ https://www.youtube.com/watch?v=uy8mi1pAj8E
 
 ### Play video games
 
-Enjoy using Bazzite!
+Enjoy using Bazzite!  Read the [**Gaming Guide**](../../Gaming/index.md) to learn your ways around Linux gaming.
