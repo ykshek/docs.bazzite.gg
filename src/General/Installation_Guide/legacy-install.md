@@ -74,7 +74,7 @@ More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the
 
     {% endblock %}
 
-## Download Legacy ISO
+## 1. Download Legacy ISO
 
 1. Download and Flash Bazzite
 
