@@ -6,7 +6,7 @@ title: Bazzite Installation Guide
 
 ## Video Walkthrough
 
-<link Wolfyreload's video>
+https://www.youtube.com/watch?v=lBqbk6Z8HrQ
 
 ## System Requirements
 
@@ -20,7 +20,8 @@ title: Bazzite Installation Guide
 - A 16GB+ bootable medium like a Flash Drive
   - Software to flash the ISO like **Fedora Media Writer** ([**Windows/macOS**](https://github.com/FedoraQt/MediaWriter/releases) or [**Linux**](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
 - A physical wired keyboard is **recommended** and **required for devices without a touchscreen**.
-  - Otherwise, create a User Account with a **username** and a **user password** if you have a keyboard.
+  - An on-screen keyboard exists for scenarios where you do not have a physical USB keyboard.
+    - A touchscreen display or a mouse is required to navigate the installer properly.
 
 ### Desktop Environments
 
@@ -199,6 +200,9 @@ If you are dual-booting with Windows then use automatic partitioning as it is th
 
 ![installing|1284x1045, 62%](../../img/live-installer-storage-encryption.png)
 
+<!-- explain why disk encryption can be useful but also not required !-->
+
+Disk encryption is optional but is available via LUKS. **You will need a physical USB keyboard to decrypt the drive!** Skip this step if you do not require disk encryption on this device.
 
 ## User Account Setup
 
@@ -208,21 +212,21 @@ If you are dual-booting with Windows then use automatic partitioning as it is th
 
     It is not recommended to enable a root account.
 
-An on-screen keyboard exists...
+Create a username and a password to login to your Bazzite account.  This password will also be used for any administrative privileges.  Make sure it is a password that you can remember.
 
 ## Installing Bazzite
 
 ![review|1283x1042, 62%](../../img/live-installer-partitions.png)
 
-
 ![installing|1282x1036, 63%](../../img/live-installer-installing.png)
-
 
 You will review the changes you are about to make.  Please read carefully before proceeding with the installation. Please wait for Bazzite to install.  This may take a while.
 
 ## Reboot
 
 ![reboot|1288x1040, 62%](../../img/live-installer-installed.png)
+
+Reboot your device.
 
 ## Secure Boot
 
@@ -311,6 +315,4 @@ Read the [**Troubleshooting Guide**](./troubleshoot_guide.md) or the [**Alternat
 
 ## Post-Installation
 
-Bazzite is now installed. Read the [**Post-Installation Guide**](./post-installation.md) for recommended next steps or start gaming!
-
-
+Bazzite is now installed. You can now take the flashable medium you used to install Bazzite out of your device.  Read the [**Post-Installation Guide**](./post-installation.md) for recommended next steps!
