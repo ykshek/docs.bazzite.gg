@@ -84,6 +84,6 @@ https://www.youtube.com/watch?v=uy8mi1pAj8E
 
 ![Screenshot of the Bazaar app store|1649x1274, 50%](../../img/Bazaar.png)
 
-### Play video games
+### Ready to Game!
 
 Enjoy using Bazzite!  Read the [**Gaming Guide**](../../Gaming/index.md) to learn your ways around Linux gaming.
