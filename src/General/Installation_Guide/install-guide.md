@@ -212,12 +212,13 @@ An on-screen keyboard exists...
 
 ## Installing Bazzite
 
-Please wait for Bazzite to install.  This may take a while.
+![review|1283x1042, 62%](../../img/live-installer-partitions.png)
+
 
 ![installing|1282x1036, 63%](../../img/live-installer-installing.png)
 
-![partitioning|1283x1042, 62%](../../img/live-installer-partitions.png)
 
+You will review the changes you are about to make.  Please read carefully before proceeding with the installation. Please wait for Bazzite to install.  This may take a while.
 
 ## Reboot
 
