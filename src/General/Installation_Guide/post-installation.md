@@ -10,7 +10,7 @@ title: Post-Installation Setup
 
 The first boot will show a screen showing your current and last deployment. It is important to note that the GRUB menu can be used to rollback Bazzite deployments if you encounter issues.
 
-Read more about this in the [Updates, Rollback, and Rebasing documentation](../../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md).
+Read more about this in the [**Updates, Rollback, and Rebasing documentation**](../../Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/index.md).
 
 It is important to configure the system settings on a first boot to personalize your desktop especially if you notice the scaling is incorrect on first-boot.
 
@@ -21,7 +21,6 @@ It is important to configure the system settings on a first boot to personalize 
 If you selected to use Steam Gaming Mode before downloading the ISO, then you will be on the Bazzite-Deck version.  After completing all of the above, then your next boot will be in Steam Gaming Mode which requires additional setup for Steam.
 
 >[Read the **Bazzite-Deck documentation**](../../Handheld_and_HTPC_edition/index.md) for more information on the HTPC/Handheld images.
-
 
 ## Configure System Settings
 
@@ -88,7 +87,7 @@ Familiarize yourself with the Bazzite Portal which does system maintenance, inst
 
 ![Screenshot of the Bazaar app store|1649x1274, 50%](../../img/Bazaar.png)
 
-Install additional software for Bazzite... 
+Install additional software for Bazzite in the Bazaar app store.  This is the place where you will be getting most of your applications, but if you require something that isn't found here then look into the [**Installing and Managing Applications**](../../Installing_and_Managing_Software/index.md)
 
 ### Ready to Game!
 
