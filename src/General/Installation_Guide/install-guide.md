@@ -155,7 +155,7 @@ If you are dual-booting with Windows then use automatic partitioning as it is th
 
 https://www.youtube.com/watch?v=KAt49B6rSFI
 
-### Written Walthrough
+### Written Walkthrough
 
 1. Installing Bazzite with a shared drive.
 2. Installing Bazzite on a separate drive.
