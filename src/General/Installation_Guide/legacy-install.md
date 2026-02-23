@@ -11,7 +11,7 @@ This guide is only for the legacy ISOs which are still supported at this time du
 ## System Requirements
 
 - Read the [**Hardware Compatibility Guide**](./Gaming/Hardware_compatibility_for_gaming.md) for Bazzite's system requirements.
-- Secure Boot and Trusted Platform Module (TPM) are supported on most hardware, but you must **enroll our key during or after installation**.
+- Secure Boot and Trusted Platform Module (TPM) are supported on most hardware, but you must [**enroll our key during or after installation**](#Secure-Boot).
 
 ### Installer Requirements
 
