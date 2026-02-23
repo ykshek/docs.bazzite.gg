@@ -25,8 +25,7 @@ This guide is only for the legacy ISOs which are still supported at this time du
 
 ### Desktop Environments
 
-All of the images come with the choice of [**KDE Plasma**](https://kde.org/plasma-desktop/) or
-[**GNOME**](https://www.gnome.org/) for their desktop environment.
+All of the images come with the choice of [**KDE Plasma**](https://kde.org/plasma-desktop/) or [**GNOME**](https://www.gnome.org/) for their desktop environment.
 
 [**Steam Gaming Mode**](https://github.com/KyleGospo/gamescope-session) is an option as an additional session to run on top of KDE Plasma or GNOME but is only recommended for Home Theatre PC (HTPC) and handheld setups.
 
