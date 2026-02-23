@@ -243,10 +243,7 @@ If you need a tutorial video for manual partitioning, watch this [tutorial at ti
 5.  Select Accept Changes
 6.  Continue with the installation.
 
-
 ## Secure Boot
-
-![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
 
 !!! note
 
@@ -275,9 +272,9 @@ Press any key to continue...
 
 Follow **Method B** below to resolve this and move past the error message if you encounter it.
 
-### Using Secure Boot with Bazzite
+### **Method A** - During Installation Method
 
-#### **Method A** - During Installation Method (See Image Above)
+![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
 
 !!! note
 
@@ -293,7 +290,7 @@ universalblue
 
 Otherwise `Continue boot` if you have Secure Boot disabled or if it is not supported with your hardware.
 
-#### **Method B** - After Installation Method
+### **Method B** - After Installation Method
 
 **Disable Secure Boot in the BIOS before proceeding**, and then re-enable it **after enrolling the key**.
 
@@ -315,6 +312,7 @@ Use the following command to boot straight into your system's BIOS (if supported
 ```command
 ujust bios
 ```
+
 ### Complete MOK enrollment at boot
 
 On the next boot, you will see the blue MokManager screen:
