@@ -113,23 +113,25 @@ Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and whe
 
 Upon booting for the first time...
 
-## Live Installer
+## Live Enviroment
 
 ![live|1431x897, 60%](../../img/live-installer-opening.png)
 
 Bazzite's live installer session lets you view the desktop applications pre-installed and get familiar with the UI/UX of it.  Please do not attempt to game on the live session since performance will not be accurate to when it is properly installed onto your drive.
 
-## Network Setup
+### Network Setup in Live Environment
 
 ![network|495x593, 100%](../../img/live-installer-network.png)
 
-Please note that an internet is not required to install Bazzite, but is useful if you're testing Bazzite before testing in the live environment.
+Please note that an internet connection is not required to install Bazzite, but is useful if you're testing Bazzite before testing in the live environment.
 
-## Select Language, Region, and Keyboard Layout
+## Select Your Language, Region, and Keyboard Layout
 
 ![installer1|1295x1054, 62%](../../img/live-installer-language.png)
 
-![installer1|1295x1054, 62%](../../img/live-installer-time-date.png)
+![installer2|1295x1054, 62%](../../img/live-installer-time-date.png)
+
+The first steps to installing Bazzite is selecting the system language, region for your time zone, and the layout of your keyboard for the correct input mapping.
 
 #### Partitioning Options
 
