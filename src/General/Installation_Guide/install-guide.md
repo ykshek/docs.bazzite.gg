@@ -125,7 +125,7 @@ Please note that an internet connection is not required to install Bazzite, but 
 
 ![installer2|1295x1054, 62%](../../img/live-installer-time-date.png)
 
-The first steps to installing Bazzite is selecting the system language, region for your time zone, and the layout of your keyboard for the correct input mapping.
+The first steps to installing Bazzite include selecting the system language, region for your time zone, and the layout of your keyboard for the correct input mapping.
 
 ## Partitioning Setup
 
@@ -135,7 +135,7 @@ The first steps to installing Bazzite is selecting the system language, region f
 
     Make sure to only select the appropriate drives to avoid losing data on others, and it is best practice to safely remove any external drives before proceeding.
 
-Select the drive that you plan to install Bazzite on...
+Select the drive that you plan to install Bazzite on. Please note that this will wipe all of the data on the drive selected.
 
 ## Dual Booting Windows
 
@@ -196,7 +196,7 @@ For Fedora Atomic Desktop images on the **same** drive: to dual boot another **F
 
 ![installing|1284x1045, 62%](../../img/live-installer-storage-encryption.png)
 
-Disk encryption is optional but is available via LUKS. **You will need a physical USB keyboard to decrypt the drive!** Skip this step if you do not require disk encryption on this device.
+Disk encryption is optional but is available via LUKS. **You will need a physical USB keyboard to decrypt the drive!** Skip this step if you do not require disk encryption on this device. This isn't a necessary step for the most common scenarios unless you fear a bad actor will have access to your physical drive that Bazzite is installed on.
 
 ## User Account Setup
 
@@ -206,7 +206,7 @@ Disk encryption is optional but is available via LUKS. **You will need a physica
 
     It is not recommended to enable a root account.
 
-Create a username and a password to login to your Bazzite account.  This password will also be used for any administrative privileges.  Make sure it is a password that you can remember.
+Create a username and a password to login to your Bazzite account.  This password will also be used for any administrative privileges.  **Make sure it is a password that you can remember**.
 
 ## Installing Bazzite
 
