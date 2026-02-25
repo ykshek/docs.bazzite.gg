@@ -35,6 +35,7 @@ title: Community Resources
 - [**Running Valve's Hammer Level Editor Software for Map Making in the Source 1 Engine**](https://andrealmeid.com/post/2020-05-28-csgo-hammer-linux/)
 - [**boxkit: Template to build your own OCI Distrobox container**](https://github.com/ublue-os/boxkit)
 - [**bazzite-arch: Gaming packages inside of a Distrobox container**](https://github.com/ublue-os/bazzite-arch)
+- [**davincibox: Container for DaVinci Resolve installation and runtime dependencies**](https://github.com/zelikos/davincibox)
 - [**DAWbox: An Ubuntu based OCI ready for music production, powered by Distrobox**](https://github.com/Messaiga/DAWbox)
 - [**ZeroTier Setup**](/General/zerotier.md)
 - [**Installing Arctis Manager**](/Advanced/arctis-manager.md)
