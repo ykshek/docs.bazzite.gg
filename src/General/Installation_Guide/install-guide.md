@@ -220,7 +220,7 @@ Review the changes that you are about to make in the installer.  **Please read c
 
 ![reboot|1288x1040, 62%](../../img/live-installer-installed.png)
 
-Reboot your device.
+Reboot your device. You can now eject the flashable medium you used to install Bazzite out of your device once your device begins to boot up again.
 
 ## Secure Boot
 
@@ -309,4 +309,4 @@ Read the [**Troubleshooting Guide**](./troubleshoot_guide.md) or the [**Alternat
 
 ## Post-Installation
 
-Bazzite is now installed. You can now take the flashable medium you used to install Bazzite out of your device.  Read the [**Post-Installation Guide**](./post-installation.md) for recommended next steps!
+Bazzite is now installed. Read the [**Post-Installation Guide**](./post-installation.md) for recommended next steps!
