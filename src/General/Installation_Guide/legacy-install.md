@@ -20,6 +20,7 @@ This guide is only for the legacy ISOs which are still supported at this time du
   - A download manager (like [**Motrix**](https://motrix.app/)) if the direct download for the Bazzite ISO fails or is downloading too slow.
 - A 16GB+ bootable medium like a Flash Drive
   - Software to flash the ISO like **Fedora Media Writer** ([**Windows/macOS**](https://github.com/FedoraQt/MediaWriter/releases) or [**Linux**](https://flathub.org/en/apps/org.fedoraproject.MediaWriter))
+    - Ventoy is **NOT** supported software for flashing the Bazzite ISO.
 - A physical wired keyboard is **recommended** and **required for devices without a touchscreen**.
   - Otherwise, create a User Account with a **username** and a **user password** if you have a keyboard.
 
