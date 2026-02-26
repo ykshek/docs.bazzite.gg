@@ -197,7 +197,11 @@ For Fedora Atomic Desktop images on the **same** drive: to dual boot another **F
 
 ![installing|1284x1045, 62%](../../img/live-installer-storage-encryption.png)
 
-Disk encryption is optional but is available via LUKS. **You will need a physical USB keyboard to decrypt the drive!** Skip this step if you do not require disk encryption on this device. This isn't a necessary step for the most common scenarios unless you fear a bad actor will have access to your physical drive that Bazzite is installed on.
+!!! warning
+
+    It will not be possible to decrypt your drive and the data will be lost if you forget your encryption password!
+
+Disk encryption is **optional** but is available via [LUKS](https://docs.fedoraproject.org/en-US/quick-docs/encrypting-drives-using-LUKS/). **You will need a physical USB keyboard to decrypt the drive!** Skip this step if you do not require disk encryption on this device. This isn't a necessary step for the most common scenarios unless you fear a bad actor will have access to your physical drive that Bazzite is installed on.
 
 ## User Account Setup
 
