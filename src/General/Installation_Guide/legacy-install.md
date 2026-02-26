@@ -87,6 +87,8 @@ More information can be found on the [**Bazzite FAQ**](https://faq.bazzite.gg) a
 
 ### Calculating ISO SHA256 Checksum Hash
 
+**Video Tutorial**:
+
 https://www.youtube.com/watch?v=wUDbMJtR1sM
 
 ## 2. Boot Bazzite
