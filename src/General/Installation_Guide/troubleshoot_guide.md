@@ -21,6 +21,10 @@ After this, your boot manager should boot normally showing "FEDORA" as the optio
 
 ## Installer Won't Boot
 
+!!! note
+
+The new installer may not boot if your BIOS is in CSM Legacy boot as opposed to UEFI. Read more in the [**Bazzite system requirements**](../../Gaming/Hardware_compatibility_for_gaming.md#minimum-system-requirements).
+
 Use the [legacy ISO](./legacy-install.md) or try the [alternative method](./alternate-install-guide.md) of installing Bazzite.
 
 ## "No Space left on Device" Error
@@ -44,7 +48,6 @@ The "code 1" error is a generic error code that appears during installation when
 - **Incorrect Filesystem:** Using the EXT4 or any other filesystem type for the root partition will cause this error. You must use BTRFS for the root partition.
 - **Corrupted ISO Image:** Ensure the ISO image isn't corrupted by calculating the checksums.
 - **Overheating USB Flash Drive:** Use a USB 3.0 or better flash drive and plug it into a USB 3.0 or better port to avoid overheating.
-
 
 ## "No Space left on Device" Error
 ![No Space left on Device](../../img/no_more_space_left.png)
