@@ -27,8 +27,6 @@ The new installer may not boot if your BIOS is in CSM Legacy boot as opposed to 
 
 Use the [legacy ISO](./legacy-install.md) or try the [alternative method](./alternate-install-guide.md) of installing Bazzite.
 
-
-
 ## Error Code 1
 
 The "code 1" error is a generic error code that appears during installation when a more specific error message isn't available. This error can occur in several scenarios that we have identified so far but there may be more scenarios:
@@ -51,6 +49,16 @@ The "code 1" error is a generic error code that appears during installation when
 
 This error can misleadingly appear when the system does not have enough RAM for the installer to operate. [**You need at least 8GB of system memory to install Bazzite.**](/General/Installation_Guide/Installing_Bazzite_for_Desktop_or_Laptop_Hardware.md/#minimum-system-requirements)
 
+## "Bad shim signature, you need to load the kernel first" error
+
+![You need to load the kernel first](../../img/you-need-to-load-the-kernel-first.png)
+
+Disable Secure Boot in BIOS to get past this screen. If you wish to use Secure Boot, follow [the **Secure Boot Guide** using method B](/General/Installation_Guide/secure_boot.md).
+
+**Video Guide**:
+
+https://www.youtube.com/watch?v=Z_DsWqTuipU
+
 ## "Device is Active" Error
 
 This error occurs when the installer encounters a BitLocker encrypted partition. You have two possible options:
@@ -68,11 +76,6 @@ https://www.youtube.com/watch?v=FBGLLkIKp-w
 
 https://www.youtube.com/watch?v=VTnm9EiBdPA
 
-### "Bad shim signature, you need to load the kernel first" error
-
-**Watch this video for a workaround**:
-
-https://www.youtube.com/watch?v=Z_DsWqTuipU
 
 ## Unable to allocate requested partition scheme error
 
