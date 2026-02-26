@@ -118,7 +118,10 @@ Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and whe
 
 ![live|1431x897, 60%](../../img/live-installer-opening.png)
 
-Bazzite's live installer session lets you view the desktop applications pre-installed and get familiar with the UI/UX of it.  Please do not attempt to game on the live session since performance will not be accurate to when it is properly installed onto your drive.
+Bazzite's live installer session lets you view the desktop applications pre-installed and get familiar with the UI/UX of it.  
+
+Please do not attempt to game on the live session since performance will not be accurate to when it is properly installed onto your drive.
+Additionally, it is worth noting that the install environment does not include all of Bazzite's hardware support, (for example for the Steam Deck Audio), as it is running a different kernel than regular Bazzite.
 
 ### Network Setup in Live Environment
 
