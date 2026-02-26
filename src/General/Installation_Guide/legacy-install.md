@@ -77,7 +77,7 @@ More information can be found on the [**Bazzite FAQ**](https://faq.bazzite.gg) a
 
 ## 0. Backup Data
 
-...
+Make sure to backup your personal data from the drive you plan to install Bazzite on to a safe place before proceeding with the installation.
 
 ## 1. Download and Flash Legacy ISO
 
