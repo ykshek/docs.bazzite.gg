@@ -78,7 +78,7 @@ More information can be found on [**Bazzite's FAQ**](../../Handheld_and_HTPC_edi
 
 ## Backup Device
 
-...
+Make sure to backup your personal data from the drive you plan to install Bazzite on to a safe place before proceeding with the installation.
 
 ## Download Bazzite
 
