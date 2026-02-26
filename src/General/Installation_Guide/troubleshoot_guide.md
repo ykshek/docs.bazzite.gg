@@ -27,7 +27,6 @@ The new installer may not boot if your BIOS is in CSM Legacy boot as opposed to 
 
 Use the [legacy ISO](./legacy-install.md) or try the [alternative method](./alternate-install-guide.md) of installing Bazzite.
 
-![No Space left on Device](../../img/no_more_space_left.png)
 
 This error can misleadingly appear when the system does not have enough RAM for the installer to operate. [**You need at least 8GB of system memory to install Bazzite.**](../../Gaming/Hardware_compatibility_for_gaming.md#minimum-system-requirements)
 
