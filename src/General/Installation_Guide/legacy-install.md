@@ -4,9 +4,9 @@ title: Legacy ISO Installation Guide
 
 # Legacy ISO Installation Guide
 
-## For Legacy ISOs Only
+## Legacy ISOs Only
 
-This guide is only for the legacy ISOs which are still supported at this time due to the new installer not supporting manual partitioning and some small bugs that are still present.
+This guide is only for the legacy ISOs which are still supported at this time due to the new installer not supporting manual partitioning and some small bugs that are still present in the new installer.
 
 ## System Requirements
 
@@ -28,9 +28,9 @@ This guide is only for the legacy ISOs which are still supported at this time du
 
 All of the images come with the choice of [**KDE Plasma**](https://kde.org/plasma-desktop/) or [**GNOME**](https://www.gnome.org/) for their desktop environment.
 
-[**Steam Gaming Mode**](https://github.com/KyleGospo/gamescope-session) is an option as an additional session to run on top of KDE Plasma or GNOME but is only recommended for Home Theatre PC (HTPC) and handheld setups.
+[**Steam Gaming Mode**](https://github.com/KyleGospo/gamescope-session) is an option as an additional session in addition to KDE Plasma or GNOME and is recommended for Home Theatre PC (HTPC) and handheld setups.
 
-More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the differences between the image variants.
+More information can be found on the [**Bazzite FAQ**](https://faq.bazzite.gg) about the differences between the image variants.
 
 === "KDE Plasma"
 
@@ -75,9 +75,11 @@ More information can be found on our [**FAQ**](https://faq.bazzite.gg) about the
 
     {% endblock %}
 
-## 1. Download Legacy ISO
+## 0. Backup Data
 
-1. Download and Flash Bazzite
+...
+
+## 1. Download and Flash Legacy ISO
 
 - Download [Bazzite](https://download.bazzite.gg) after choosing the correct ISO for your hardware with our Image Picker tool.
 - Flash Bazzite to your bootable medium.
