@@ -12,7 +12,7 @@ search:
 
 !!! note
 
-    Skip this section if Secure Boot is not enabled or unsupported with your hardware.
+    Click "Coninue boot" if your device doesn't support Secure Boot or you don't want to enable it.
 
 !!! important
 
