@@ -38,7 +38,7 @@ More information can be found on [**Bazzite's FAQ**](../../Handheld_and_HTPC_edi
 
     #### [KDE Plasma (Default)](https://kde.org/plasma-desktop/)
 
-    ![KDE Plasma|690x388, 75%](/img/KDE_Plasma_DE.jpeg)
+    ![KDE Plasma|690x388, 75%](/img/KDE_Plasma_DE.png)
 
     - KDE Plasma's default interface has a traditional and familiar layout
     - Highly customizable with tons of settings
@@ -49,7 +49,7 @@ More information can be found on [**Bazzite's FAQ**](../../Handheld_and_HTPC_edi
 
     #### [GNOME (`-gnome` images)](https://www.gnome.org/)
 
-    ![GNOME|690x359, 75%](/img/GNOME_DE.png)
+    ![GNOME|690x388, 75%](/img/GNOME_DE.png)
 
     - GNOME's default interface has an elegant and touch-friendly layout
     - Simple and concise
@@ -114,7 +114,7 @@ Hold the 'Volume Down' (<kbd>-</kbd>) button and click the Power Button, and whe
 
 ## Live Environment
 
-![boot|1573x872, 50%](../../img/live-installer-grub.png)
+![boot|800x600, 70%](../../img/live-installer-grub.png)
 
 ![live|1431x897, 60%](../../img/live-installer-opening.png)
 
@@ -267,7 +267,7 @@ Follow **Method B** below to resolve this and move past the error message if you
 
 ### **Method A** - During Installation Method
 
-![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
+![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|200x102, 100%](../../img/Secure_Boot.png 'Secure Boot')
 
 !!! note
 
