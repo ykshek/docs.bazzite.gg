@@ -24,6 +24,7 @@ Bazzite supports Secure Boot however Universal Blue's key must be enrolled to us
 
 - Entering the password will register invisible characters for security purposes, so you will not be able to see what you are typing!
 - Updating your BIOS may re-enable Secure Boot and you may have to follow **"Method B"** after updating it to resolve the black screen on boot complaining about loading the kernel first.
+- Secure Boot is incompatible with [CSM (Compatibility Support Module) / legacy](../General/FAQ.md#does-bazzite-support-csmlegacy-boot) mode. Make sure it is **disabled** and not set to `enabled` or `auto`.
 - The Steam Deck does **not** come with secure boot enabled and does not ship with any keys enrolled by default, do not enable Secure Boot on your Steam Deck unless you absolutely know what you're doing.
 
 ## Error Message (if key is **not** enrolled properly):
@@ -39,7 +40,7 @@ Follow **Method B** below to resolve this and move past the error message if you
 
 ### **Method A** - During Installation Method
 
-![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|690x378, 50%](../../img/Secure_Boot.jpeg 'Secure Boot')
+![Secure Boot menu: Continue boot / Enroll MOK / Enroll key from disk / Enroll hash from disk|200x102, 100%](../../img/Secure_Boot.png 'Secure Boot')
 
 !!! note
 
