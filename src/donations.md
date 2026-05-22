@@ -72,18 +72,16 @@ Enjoy using Bazzite and want to help sustain its development? Consider sponsorin
 {{ contributor("Zeglius", "Zeglius", "Scripting, Documentation Maintenance, Live ISOs Maintainer", "https://github.com/sponsors/Zeglius") }}
 {{ contributor("CheckYourFax", "CheckYourFax", "Community Support, Issue Wrangling") }}
 {{ contributor("Valerie", "valerie-tar-gz", "Social Media Manager, Technical Support") }}
-{{ contributor("Amélia", "ameliasvg", "Logo and Mascot Creator") }}
+{{ contributor("Amélia", "ameliasvg", "Logo Designer") }}
 {{ contributor("Kurt Himebauch", "xXJSONDeruloXx", "ujust Extraordinaire. Decky wrangler. Framegen.") }}
 {{ contributor("Zacharias Xenakis", "Xarishark", "Bazzite Portal, UX enhancements, bug fixes & translations") }}
 {{ contributor("stellaberrant", "stellaberrant", "Translations and bug fixes") }}
-{{ contributor("wolfyreload", "wolfyreload", "Visual Guides on Youtube, QA Testing") }}
-{{ contributor("CharlieBros", "CharlieBros", "Language Translations in Spanish") }}
+{{ contributor("wolfyreload", "wolfyreload", "Visual Guides on YouTube, QA Testing") }}
 {{ contributor("Dylan Taylor", "dylanmtaylor", "Image and CI/CD work, new release enablement, and testing", "https://github.com/sponsors/dylanmtaylor") }}
 {{ contributor("Jill Fiore", "Lumaeris", "Language Translations in Russian, bug fixes & QoL improvements") }}
 {{ contributor("Alex Shek", "ykshek", "Advanced features like custom resolution support") }}
 {{ contributor("Crono", "EPOCHvoyager", "Significant testing", "https://github.com/sponsors/EPOCHvoyager") }}
 
-    
 </div>
 
 ## Universal Blue
@@ -91,12 +89,12 @@ Enjoy using Bazzite and want to help sustain its development? Consider sponsorin
 >Special thanks to Universal Blue's [**Emeritus**](https://github.com/ublue-os/main/blob/main/emeritus.md) who has contributed in the early days of the project.
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
-{{ contributor("Jorge Castro", "castrojo", "Universal Blue founder, Bluefin Lead Maintainer, Co-creator of Bazzite DX edition", "https://github.com/sponsors/castrojo") }}
-{{ contributor("Niklas Haiden", "NiHaiden", "Aurora Lead Maintainer, Co-creator of Bazzite DX edition") }}
-{{ contributor("Benjamin Sherman", "bsherman", "uCore Lead Maintainer, Kernel modules maintainer, UBlue Main image maintainer") }}
-{{ contributor("m2", "m2Giles", "Kernel modules maintainer, UBlue Main image maintainer. Bug Fixes & Enhancements.") }}
-{{ contributor("Tulip Blossom", "tulilirockz", "Bluefin Maintainer, Leads Wolfi Bluefin expansion. Numerous fixes affecting Bazzite.", "https://github.com/sponsors/tulilirockz") }}
-{{ contributor("Gareth Widlansky", "gerblesh", "Image Maintenance") }}
+{{ contributor("Jorge Castro", "castrojo", "Universal Blue founder, Bluefin Lead Maintainer", "https://github.com/sponsors/castrojo") }}
+{{ contributor("Niklas Haiden", "NiHaiden", "Aurora Lead Maintainer") }}
+{{ contributor("Benjamin Sherman", "bsherman", "uCore Lead Maintainer, Kernel modules maintainer, Universal Blue Main images maintainer") }}
+{{ contributor("m2", "m2Giles", "Kernel modules maintainer, Universal Blue Main images maintainer. Bug Fixes & Enhancements.") }}
+{{ contributor("Tulip Blossom", "tulilirockz", "Bluefin Maintainer. Numerous fixes affecting Bazzite.", "https://github.com/sponsors/tulilirockz") }}
+{{ contributor("Gareth Widlansky", "gerblesh", "uupd maintainer") }}
 </div>
 
 ## Other Contributors
@@ -104,6 +102,7 @@ Enjoy using Bazzite and want to help sustain its development? Consider sponsorin
 <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
 {{ contributor("RJ Trujillo", "EyeCantCU", "Early Maintainer of Bazzite. CI/CD Pipelines, Initial Alternate Desktop Environment Support, and proper Steam Deck support. Emeritus.") }}
 {{ contributor("Pat Connors", "nicknamenamenick", "Documentation") }}
+{{ contributor("CharlieBros", "CharlieBros", "Language Translations in Spanish") }}
 {{ contributor("Aarron Lee", "aarron-lee", "Decky plugin creator for alternate handhelds. Provided a lot of early testing, especially with GPD and Legion Go devices. Emeritus.") }}
 {{ contributor("Jan", "Jan200101", "Early Kernel maintainer of Bazzite through the kernel-fsync project. Emeritus.") }}
 {{ contributor("Sean Srock", "SuperRiderTH", "Animator. Early Ally tester. Creator of Bazzite Boot/Sleep animations.") }}
