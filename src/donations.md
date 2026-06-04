@@ -78,7 +78,6 @@ Enjoy using Bazzite and want to help sustain its development? Consider sponsorin
 {{ contributor("stellaberrant", "stellaberrant", "Translations and bug fixes") }}
 {{ contributor("wolfyreload", "wolfyreload", "Visual Guides on YouTube, QA Testing") }}
 {{ contributor("Dylan Taylor", "dylanmtaylor", "Image and CI/CD work, new release enablement, and testing", "https://github.com/sponsors/dylanmtaylor") }}
-{{ contributor("Jill Fiore", "Lumaeris", "Language Translations in Russian, bug fixes & QoL improvements") }}
 {{ contributor("Alex Shek", "ykshek", "Advanced features like custom resolution support") }}
 {{ contributor("Crono", "EPOCHvoyager", "Significant testing", "https://github.com/sponsors/EPOCHvoyager") }}
 
@@ -103,6 +102,7 @@ Enjoy using Bazzite and want to help sustain its development? Consider sponsorin
 {{ contributor("RJ Trujillo", "EyeCantCU", "Early Maintainer of Bazzite. CI/CD Pipelines, Initial Alternate Desktop Environment Support, and proper Steam Deck support. Emeritus.") }}
 {{ contributor("Pat Connors", "nicknamenamenick", "Documentation") }}
 {{ contributor("CharlieBros", "CharlieBros", "Language Translations in Spanish") }}
+{{ contributor("Jill Fiore", "Lumaeris", "Language Translations in Russian, bug fixes & QoL improvements. Emeritus.") }}
 {{ contributor("Aarron Lee", "aarron-lee", "Decky plugin creator for alternate handhelds. Provided a lot of early testing, especially with GPD and Legion Go devices. Emeritus.") }}
 {{ contributor("Jan", "Jan200101", "Early Kernel maintainer of Bazzite through the kernel-fsync project. Emeritus.") }}
 {{ contributor("Sean Srock", "SuperRiderTH", "Animator. Early Ally tester. Creator of Bazzite Boot/Sleep animations.") }}
