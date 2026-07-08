@@ -38,47 +38,41 @@ The Bazzite Portal is installed by default. To launch the app:
 
 The Bazzite Portal's features are organized into categories:
 
-![Screenshot of the Bazzite Portal's categories|1358x208, 50%](../img/Bazzite_Portal_Categories.png)
+![Screenshot of the Bazzite Portal's categories|1700x346, 50%](../img/Bazzite_Portal_Categories.png)
 
-### Setting up Bazzite
+Below are a list of non-exhaustive previews, containing select entries of each category.
 
-This category installs various apps (such as [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader)) and integrates them with Steam, where supported.
+<hr>
 
-| Feature                    | Description                                                                                                                             | `ujust` command              |
-| :------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------- |
-| **iwd**                    | Switches the Wi-Fi backend between `iwd` and `wpa_supplicant`. The `iwd` backend can improve network performance in some circumstances. | `toggle-iwd`                 |
-| **Decky Loader**           | Installs the Decky plugin loader.                                                                                                       | `setup-decky`                |
-| **Decky Bazzite Buddy**    | Shows the latest Bazzite changelogs in Decky.                                                                                           | `get-decky-bazzite-buddy`    |
-| **Decky Framegen**         | Adds OptiScaler to a Steam game.                                                                                                        | `get-framegen`               |
-| **Decky Lossless Scaling** | Adds compatibility for lossless scaling.                                                                                                | `get-decky-lossless-scaling` |
-| **EmuDeck**                | Installs emulators and adds them to Steam.                                                                                              | `get-emudeck`                |
-| **Sunshine**               | Installs a self-hosted game streaming service, letting you play games remotely using a Moonlight client.                                | `setup-sunshine`             |
-| **Waydroid**               | Installs a compatibility layer for Android apps.                                                                                        | `configure-waydroid`         |
-| **OpenRGB**                | Control your device's RGB lighting.                                                                                                     | `install-openrgb`            |
-| **Resilio Sync**           | Installs a file synchronization tool that uses peer-to-peer networking.                                                                 | `install-resilio-sync`       |
+### Welcome!
 
-### Customizations and tweaks
+This category provides essential resources, community links, and documentation to help new users get started with Bazzite.
 
-This category contains settings to suit personal preferences or specific hardware.
+| Feature | Description | Script Command |
+| :--- | :--- | :--- |
+| **Read the Bazzite Docs** | Opens the official online Bazzite documentation. | `xdg-open https://docs.bazzite.gg/` |
+| **Browse your Bazaar** | Opens instructions and launches the Bazaar software store. | Custom script launching Bazaar |
+| **Get help through Discord** | Opens the official Bazzite Discord server for technical support. | `xdg-open https://discord.gg/JQq48bYzrc` |
+| **See our announcements in Discourse** | Links to Discourse forum announcements for breaking Bazzite news. | `xdg-open https://universal-blue.discourse.group/tags/c/bazzite/announcements/` |
+| **Join the official community on Reddit** | Opens the official Bazzite subreddit. | `xdg-open https://www.reddit.com/r/Bazzite/` |
 
-| Feature                             | Description                                                                                                                                                                                                 | `ujust` command            |
-| :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------- |
-| **Add input group to current user** | Runs a script that adds your user account to the `input` group. This is needed for compatibility with certain controller drivers.                                                                              | `add-user-to-input-group`  |
-| **Visible Password Asterisks**      | Toggles password asterisks for `sudo` prompts.                                                                                                                                                              | `toggle-password-feedback` |
-| **GRUB Menu Visibility**            | Hide or show the GRUB menu during the boot process.                                                                                                                                                         | `configure-grub`           |
-| **Boot to Windows from Steam**      | If you're dual-booting with Windows, this adds a Steam menu item that lets you reboot into Windows.                                                                                                         | `setup-boot-windows-steam` |
-| **Automounting**                    | Configure automounting of `BTRFS` and `EXT4` partitions under `/run/media/system`                                                                                                                           | `toggle-automounting`      |
-| **SteamOS Automounting**            | Enables or disables file system automounting for SteamOS.                                                                                                                                                   | `enable-steamos-automount` |
-| **Wake-on-LAN**                     | Enables Wake-on-LAN support for remotely powering on your device.                                                                                                                                              | `toggle-wol`               |
-| **CEC Sleep Standby**               | Automatically puts your TV on standby when system sleeps. Uses HDMI-CEC and requires compatible hardware.                                                                                                   | `toggle-cec-sleep`         |
-| **Clean Steam Shortcuts**           | Automatically deletes any Steam shortcuts from your desktop whenever you reboot.                                                                                                                            | `steam-icons`              |
-| **OpenTabletDriver**                | An open source tablet driver.                                                                                                                                                                               | `install-opentabletdriver` |
-| **SSH Service**                     | Enables remote SSH access to your system.                                                                                                                                                                   | `toggle-ssh`               |
-| **SteamCMD**                        | A command-line client for Steam that lets you install dedicated servers.                                                                                                                                    | `get-steamcmd`             |
-| **Global FSR4 Upgrade (RDNA4)**     | Enables Proton FSR4 for RDNA4 GPUs. Also upgrades FSR 3.1+ to FSR 4 on Proton 10 (and Proton GE 10-25 or newer).                                                                                            | `toggle-global-fsr4`       |
-| **Global FSR4 Upgrade (RDNA3)**     | Enables Proton FSR4 for RDNA3 GPUs, such as the RX 7900 XTX. Also upgrades FSR 3.1+ to FSR 4. Only compatible with Proton GE, Proton EM, or similar.                                      | `toggle-global-fsr4-rdna3` |
-| **Global DLSS Upgrade**             | Enables the Proton DLSS upgrade, which updates DLSS DLLs. Only compatible with Proton GE, Proton EM, or similar.                                                                                     | `toggle-global-dlss`       |
-| **REISUB**                          | Enables all the [`magic SysRq key`](https://fedoraproject.org/wiki/QA/Sysrq) functions, using `kernel.sysrq = 1`. **Note:** This setting is considered insecure. | `toggle-reisub`            |
+<hr>
+
+### Install Applications
+
+This category offers software packages, development toolchains, gaming plugins, and hardware management utilities that can be installed using Homebrew, Distrobox, or native scripts.
+
+| Feature | Description | `ujust` Command |
+| :--- | :--- | :--- |
+| **Android Platform Tools** | Command-line tools for interfacing with the Android OS (via Brew). | Brew cask script |
+| **Antigravity** | AI-powered IDE from Google (via Brew). | Brew cask script |
+| **asusctl & ROG Control Center** | Utilities for management of ASUS hardware. | `asus` |
+| ... | ... | ... |
+| **Visual Studio Code** | Open source code editor and debugger from Microsoft (via Brew). | Brew cask script |
+| **VSCodium** | Open source community edition of Visual Studio Code (via Brew). | Brew cask script |
+| **Waydroid** | Android container compatibility layer for Linux. | `configure-waydroid` |
+
+<hr>
 
 ### Media Applications
 
@@ -88,26 +82,59 @@ This integration lets you run the web app directly from your Steam library. For 
 
 ![Screenshot of the Spotify web app in the Steam Library|460x243, 70%](../img/Steam_Library_spotify.png)
 
-### Brew
+<hr>
 
-This category lets you install Homebrew apps from the [Universal Blue tap](https://github.com/ublue-os/homebrew-tap).
-
-| Feature                                          | Description                                                | Brew component             |
-| ------------------------------------------------ | ---------------------------------------------------------- | -------------------------- |
-| **Add the Ublue tap**                            | Adds the Universal Blue Brew tap.                          | `ublue-os/tap`             |
-| **Install Visual Studio Code (Needs Ublue Tap)** | Installs the Visual Studio Code editor.                    | `visual-studio-code-linux` |
-| **Install Antigravity (Needs Ublue Tap)**        | Installs Google Gravity, an IDE for an AI Coding Agent.    | `antigravity-linux`        |
-| **Install LM Studio (Needs Ublue Tap)**          | Installs LM Studio, letting you run LLMs on your computer. | `lm-studio-linux`          |
-| **Install JetBrains Toolbox (Needs Ublue Tap)**  | Installs JetBrains Toolbox.                                | `jetbrains-toolbox-linux`  |
-| **Install VSCodium (Needs Ublue Tap)**           | Installs the VSCodium editor.                              | `vscodium-linux`           |
-
-### Systems Management
+### Manage Bazzite
 
 This category lets you update your system and do advanced troubleshooting. You can gather system logs, rollback system updates, reset Bazzite to its default configuration, or rebase your system to a different version.
 
 - **Update Bazzite and Apps**: See the [Update Guide](Updates_Rollbacks_and_Rebasing/updating_guide.md).
 - **Rebase Bazzite** (_stable_ and _testing_): See the [Rebase Guide](Updates_Rollbacks_and_Rebasing/rebase_guide.md).
 - **Rollback Bazzite**: See [Rollbacks](Updates_Rollbacks_and_Rebasing/rolling_back_system_updates.md) and [Bazzite Rollback Helper](Updates_Rollbacks_and_Rebasing/bazzite_rollback_helper.md).
+
+| Feature | Description | `ujust` / Script Command |
+| :--- | :--- | :--- |
+| **Update your system** | Update Bazzite, Flatpak apps, and system components. | `update` |
+| **Move to stable track** | Rebase system to the `stable` Bazzite image tag. | `brh rebase stable -y && reboot` |
+| **Move to testing track** | Rebase system to the `testing` Bazzite image tag. | `brh rebase testing -y && reboot` |
+| ... | ... | ... |
+| **Manage GRUB menu visibility** | Configure GRUB visibility during system boot sequence. | `configure-grub` |
+| **Configure GRUB timeout** | Set waiting period before GRUB boots default entry. | `grub-timeout` |
+| **Reboot to UEFI** | Reboot directly into UEFI firmware settings. | `systemctl reboot --firmware-setup` |
+
+<hr>
+
+### Tweak Systems
+
+This category provides system tweaks, including user permissions, disk automounting, snapshot management, audio routing, and GPU upscaling toggles.
+
+| Feature | Description | `ujust` Command |
+| :--- | :--- | :--- |
+| **Add «input» group** | Add user account to `input` group for controller driver compatibility. | `add-user-to-input-group` |
+| **Boot to Windows from Steam** | Add shortcut in Steam for automated dual-boot into Windows. | `setup-boot-windows-steam` |
+| **Clean Steam icons** | Enable auto-cleanup of desktop icons generated by Steam. | `steam-icons` |
+| ... | ... | ... |
+| **Automounting** | Manage automounting of labeled `BTRFS` and `EXT4` partitions under `/run/media/system`. | `automounting` |
+| **Toggle Input Remapper** | Manage Input Remapper and GUI launcher visibility. | `restore-input-remapper` |
+| **SteamOS Automounting** | Enable or disable file system automounting rules from SteamOS. | `steamos-automount` |
+
+<hr>
+
+### Troubleshoot
+
+This category offers diagnostic and recovery utilities designed to resolve common problems.
+
+| Feature | Description | `ujust` / Script Command |
+| :--- | :--- | :--- |
+| **Collect system logs** | Gather system records and hardware info into a shareable report. | `get-logs` |
+| **Rollback Bazzite** | Revert system to previous image deployment. | `brh rollback -y && reboot` |
+| **Save kernel panics** | Toggle `ramoops` panic logger to keep crash logs across reboots. | `toggle-save-panics` |
+| ... | ... | ... |
+| **Run benchmark** | Run 1-minute processor performance assessment. | `benchmark` |
+| **Enable REISUB** | Toggle SysRq shortcut key for safer forced reboots. | `reisub` |
+| **Regenerate GRUB config** | Regenerate GRUB configuration and probe for dual-boot OS installations. | `regenerate-grub` |
+
+<hr>
 
 ## How the Bazzite Portal works
 
@@ -135,7 +162,7 @@ For example, this entry shows the `ujust` commands used by the `iwd` setting:
 
 This configuration generates menu options in Bazzite Portal that let you enable or disable `iwd`:
 
-![Screenshot of the Bazzite Portal iwd options|711x456, 50%](../img/Bazzite_Portal_iwd.png)
+![Screenshot of the Bazzite Portal iwd options|909x639, 75%](../img/Bazzite_Portal_iwd.png)
 
 !!! tip "Want to know more?"
 
@@ -143,4 +170,4 @@ This configuration generates menu options in Bazzite Portal that let you enable 
 
 ## Project website
 
-https://github.com/xXJSONDeruloXx/yafti-gtk
+https://github.com/ublue-os/yafti-gtk/
