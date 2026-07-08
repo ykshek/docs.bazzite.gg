@@ -97,15 +97,35 @@ Next run `iw wlp6s0 get power_save` (change `wlp6s0` if your device name is diff
 Power save: on
 ```
 
-There are different steps to resolve this depending on if you've disabled **iwd**. If you have updated or installed Bazzite after [1st Jan 2026](https://universal-blue.discourse.group/t/bazzite-spring-cleaning-in-december-update/), **iwd** will be set as the default WiFi backend.
-!!! info "For performance reasons, and to fix certain issues in relation to streaming, [`iwd`](https://wiki.archlinux.org/title/Iwd) replaced [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant) as the default WiFi backend for Bazzite since 2026. To switch back, run `ujust toggle-iwd`. Note that switching will **remove** all network configurations."
+There are different steps to resolve this depending on your current Wi-Fi backend.
+!!! info "[`iwd`](https://wiki.archlinux.org/title/Iwd) has been abandoned due to the big Intel layoffs in 2026. You may still try it to fix lag spikes caused by [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant), but it may stop working at anytime and is thus highly advisable to [switch your Wi-Fi backend](../issues_and_resolutions/#switching-wi-fi-backends) to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant)"
 
+=== "wpa_supplicant (iwd is OFF)"
+
+    We are going to configure NetworkManager to not use the power save feature for all Wi-Fi devices. Open a terminal and run
+
+    ```bash
+    echo -e "[connection]\nwifi.powersave = 2" | sudo tee /etc/NetworkManager/conf.d/wifi-powersave-off.conf
+    systemctl restart NetworkManager
+    ```
+
+    Next, run `iw wlp6s0 get power_save` to confirm that power save is off:
+    ```
+    Power save: off
+    ```
+
+    Note that this fix may negatively affect the battery life of your laptop or handheld. If you do wish to reverse this change, just delete the config file:
+    ```bash
+    sudo rm /etc/NetworkManager/conf.d/wifi-powersave-off.conf
+    systemctl restart NetworkManager
+    ```
+    
 === "iwd (iwd is ON)"
 
     We are going to configure iwd to not use the power save feature for all Wi-Fi devices. Open a terminal and run
 
     ```bash
-    printf "[DriverQuirks]\nPowerSaveDisable = *" | sudo tee /etc/iwd/main.conf
+    echo -e "[DriverQuirks]\nPowerSaveDisable = *" | sudo tee /etc/iwd/main.conf
     systemctl restart iwd
     ```
 
@@ -120,35 +140,15 @@ There are different steps to resolve this depending on if you've disabled **iwd*
     systemctl restart iwd
     ```
 
-=== "wpa_supplicant (iwd is OFF)"
-
-    We are going to configure NetworkManager to not use the power save feature for all Wi-Fi devices. Open a terminal and run
-
-    ```bash
-    printf "[connection]\nwifi.powersave = 2" | sudo tee /etc/NetworkManager/conf.d/wifi-powersave-off.conf
-    systemctl restart NetworkManager
-    ```
-
-    Next, run `iw wlp6s0 get power_save` to confirm that power save is off:
-    ```
-    Power save: off
-    ```
-
-    Note that this fix may negatively affect the battery life of your laptop or handheld. If you do wish to reverse this change, just delete the config file:
-    ```bash
-    sudo rm /etc/NetworkManager/conf.d/wifi-powersave-off.conf
-    systemctl restart NetworkManager
-    ```
-
 <hr>
 
 ## Error on connecting to Wi-Fi: "Failed to add new connection: 802.1x connections must have IWD provisioning files"
 
-!!! info "For performance reasons, and to fix certain issues in relation to streaming, [`iwd`](https://wiki.archlinux.org/title/Iwd) replaced [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant) as the default WiFi backend for Bazzite since 2026. To switch back, run `ujust toggle-iwd`. Note that switching will **remove** all network configurations."
+!!! warning "This is an [`iwd`](https://wiki.archlinux.org/title/Iwd) specific issue. It is highly advisable to [switch your Wi-Fi backend](../issues_and_resolutions/#switching-wi-fi-backends) to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant) as the [`iwd`](https://wiki.archlinux.org/title/Iwd) project is no longer maintained by Intel."
 
 NetworkManager cannot automatically generate 802.1x connections when using the `iwd` backend.
 
-If you prefer to keep using the `iwd` backend and just want to connect to `eduroam`, follow these steps:
+If you need to continue using the `iwd` backend and just want to connect to `eduroam`, follow these steps:
 
 ```bash
 sudo nano /var/lib/iwd/eduroam.8021x
@@ -178,13 +178,11 @@ nmcli connection modify eduroam 802-1x.phase1-auth-flags 32
 
 And try to connect again.
 
-If you still encounter Wi-Fi related issues, try reverting to the `wpa_supplicant` backend or reach out to support on https://discord.bazzite.gg.
-
 <hr>
 
 ## Error on connecting to Wi-Fi: "IP configuration was unavailable" when connecting to 802.1x wireless networks
 
-!!! info "For performance reasons, and to fix certain issues in relation to streaming, [`iwd`](https://wiki.archlinux.org/title/Iwd) replaced [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant) as the default WiFi backend for Bazzite since 2026. To switch back, run `ujust toggle-iwd`. Note that switching will **remove** all network configurations."
+!!! warning "This is an [`iwd`](https://wiki.archlinux.org/title/Iwd) specific issue. It is highly advisable to [switch your Wi-Fi backend](../issues_and_resolutions/#switching-wi-fi-backends) to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant) as the [`iwd`](https://wiki.archlinux.org/title/Iwd) project is no longer maintained by Intel."
 
 Check the system logs with `ujust logs-this-boot | grep NetworkManager`, you should be able to see that 
 
@@ -219,7 +217,14 @@ systemctl restart iwd
 ```
 
 You should be able to connect to the enterprise network.
-If you still encounter Wi-Fi related issues, try reverting to the `wpa_supplicant` backend or reach out to support on https://discord.bazzite.gg.
+
+<hr>
+
+## Switching Wi-Fi Backends
+
+!!! info "[`iwd`](https://wiki.archlinux.org/title/Iwd) has been abandoned due to the big Intel layoffs in 2026. You may still try it to fix lag spikes caused by [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant), but it may stop working at anytime and is thus highly advisable to switch your Wi-Fi backend to [`wpa_supplicant`](https://wiki.archlinux.org/title/Wpa_supplicant)"
+
+To switch your Wi-Fi backend, open [Bazzite Portal](../../Installing_and_Managing_Software/Bazzite_Portal/), and under the **Troubleshooting** page, select **Change Wi-Fi system back-end**.
 
 <hr>
 
