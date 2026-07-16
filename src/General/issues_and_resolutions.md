@@ -244,9 +244,9 @@ ujust enable-supergfxctl
 
 **Issue:** If you have recently updated Bazzite on a device with an Nvidia GPU, you might notice that Flatpak applications are running poorly and/or have no hardware acceleration.
 
-**Resolution:** Update the Flatpak Nvidia Runtimes in **Bazzite Updater**, or from the command line with `flatpak update`.
+**Resolution:** Update all Flatpaks in **Bazaar**, or select **Update Nvidia Flatpak Runtime** under **Bazzite Portal** → **Manage Bazzite** if you do not want to update other Flatpaks.
 
-!!! info "Previous attempts at automating this caused longer boot times and did not work without internet access and was thus not adopted. The better solution is for upstream Flatpak/Nvidia to improve the way these Runtimes are handled, or to create a package that provides a Flatpak Nvidia driver using system libraries, but those require a lot more work to make possible."
+!!! info "There is a systemd service that automates this, but you may still need to update it manually in some situations (e.g. No Internet connection on startup). The ideal solution is for upstream Flatpak/Nvidia to improve the way these Runtimes are handled, or to create a package that provides a Flatpak Nvidia driver using system libraries, but those require a lot more work to make possible."
 
 <hr>
 
