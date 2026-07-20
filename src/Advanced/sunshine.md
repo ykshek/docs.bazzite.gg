@@ -160,7 +160,7 @@ This usually means that the Sunshine executable has trouble capturing the screen
 
 === "KWin ScreenCast"
 
-    On some KDE Plasma/Sunshine versions, the permission of KWin ScreenCast is not set up properly with the `zkde_screencast_unstable_v1` protocol. It can temporarily be fixed by setting the `KWIN_WAYLAND_NO_PERMISSION_CHECKS=1` environmental variable, which can be done automatically in [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal/) → Install Applications → Setup Virtual Monitor → Fix Error 503, or setting it in any of the following 3 places:
+    On some KDE Plasma/Sunshine versions, the permission of KWin ScreenCast is not set up properly with the `zkde_screencast_unstable_v1` protocol. It can temporarily be fixed by setting the `KWIN_WAYLAND_NO_PERMISSION_CHECKS=1` environment variable, which can be done automatically in [Bazzite Portal](/Installing_and_Managing_Software/Bazzite_Portal/) → Install Applications → Setup Virtual Monitor → Fix Error 503, or by setting it in any of the following 3 places:
     
     -   System Wide Configuration: `/etc/environment.d/`
     -   User Configuration: `~/.config/environment.d/` (Bazzite Portal sets it here)
