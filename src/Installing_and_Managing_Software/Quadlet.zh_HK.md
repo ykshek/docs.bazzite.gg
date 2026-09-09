@@ -1,70 +1,80 @@
 ---
-title: Quadlets (Services)
+title: Quadlets (系統服務)
 ---
 
-# Quadlet (Services)
+# Quadlet (系統服務)
 
 ![podman|385x358, 50%](../img/podman.png)
 
-## Quadlet Usecases
+## 為甚麼要用 Quadlet？
 
-Quadlet is a feature of [podman](https://podman.io/) that allows a user to run a container as [systemd](https://systemd.io/) units. It works by using a declarative syntax like [docker compose](https://docs.docker.com/compose/) but integrates to systemd and uses podman as a backend.
+Quadlet 是一個由 [podman](https://podman.io/) 提供、將容器以[systemd](https://systemd.io/) 系統服務運行的功能。其 Declarative 語法與 [docker compose](https://docs.docker.com/compose/) 相似，但對於 Systemd 系統集成，且使用 Podman 作為後端。
 
-Quadlet can be used for application packaged as a container such as a server application. You can find a lot of examples of containerized applications from [Linux Server](https://docs.linuxserver.io/images/).
+Quadlet 可以將一個程式作為伺服器服務容器般使用。詳情請閱 [Linux Server 鏡像](https://docs.linuxserver.io/images/)
 
 ---
 
-## Managing Quadlet
+## 管理 Quadlet
 
-Quadlet can be managed like any other systemd service using below command.
+Quadlet 可以常用的 Systemd 語法進行管理。
 
-Checking Quadlet status
+檢索 Quadlet 服務運行詳情：
+
 ```bash
 systemctl --user status <service>
 ```
 
-Stopping Quadlet
+終止 Quadlet 服務：
+
 ```bash
 systemctl --user stop <service>
 ```
 
-> You may see more commands in [man systemctl](https://man.archlinux.org/man/systemctl.1) or [tldr systemctl](https://tldr.inbrowser.app/pages/linux/systemctl).
+> 你可以在 [`man systemctl`](https://man.archlinux.org/man/systemctl.1) 或 [tldr systemctl](https://tldr.inbrowser.app/pages/linux/systemctl) 中查看更多 Systemd 語法。
 
-!!! note
+!!! note "溫馨提示"
 
-    Do not add the `.container` suffix when you interact with systemctl or an error will occur.
+    不要使用 `.container` 後綴，否則 Systemctl 會報錯。
 
 ---
 
-### Quadlet File Locations
+### Quadlet 檔案位置
 
-You can put your quadlet in these locations sorted by priority:
+你可將你的 Quadlet 檔放置在下列位置（優先度由高至低）：
 
-- `$XDG_RUNTIME_DIR/containers/systemd/` - Usually used for temporary quadlet
-- `~/.config/containers/systemd/` - Recommended location
+- `$XDG_RUNTIME_DIR/containers/systemd/` - 常用於臨時、測試、一次性的 Quadlet
+- `~/.config/containers/systemd/` - 推薦位置
 - `/etc/containers/systemd/users/$(UID)`
 - `/etc/containers/systemd/users/`
 
-!!! note
+!!! note "溫馨提示"
 
-    If you want your service to start even when you are not logged in, run `loginctl enable-linger $USER` to start it automatically.
+    如你欲將服務設為無視用戶登入狀態地自啟動，你可以使用 `loginctl enable-linger $USER` 指令。
 
-### Running Quadlet on Startup
+---
 
-You may want to run your quadlet automatically on startup, just add an install section to the quadlet file if you want it to autostart. Most of the time `default.target` is what you want but if you need other target you can read about that on systemd docs.
+### 自啟動 Quadlet
 
-```
-[Install]
-WantedBy=default.target
-```
+如你欲將 Quadlet 服務設為自啟動，你可以於 Quadlet 設定檔中添加 `[Install]` 段落。在大部分情況下，你可以使用 `default.target`。如需使用其他自啟動的 `target`，請參閱 [systemd Arch維基](https://wiki.archlinux.org/title/Systemd)。
 
-### Converting Docker Compose to Quadlet Unit
+!!! example "例子"
 
-You will find that most of containerized apps in the web are built using docker compose. Even the Linux Server that is linked above has all containers documented using a compose file. So you will need to convert it first, before running it as quadlet, fortunately you can use [podlet](https://github.com/containers/podlet) to help you converting it.
+    ```
+    [Install]
+    WantedBy=default.target
+    ```
 
-!!! note
+---
 
-    By default quadlet require full repository name. Most images are in docker hub so add `docker.io/` (e.g "nginxinc/nginx-unprivileged" becomes "docker.io/nginxinc/nginx-unprivileged") to it.
+### 由 Docker Compose 轉換至 Quadlet Unit
+
+大部分容器化的軟件皆使用 Docker Compose。在這些情況下，你可以使用 [podlet](https://github.com/containers/podlet) 將其轉譯至 Quadlet 檔。
+
+!!! note "溫馨提示"
+
+    Quadlet 預設使用 Full Repository Name。大部分的容器鏡像皆使用 Docker Hub ，因此你可在鏡像名稱前添加 `docker.io/` 以獲得 Full Repository Name。（如 `nginxinc/nginx-unprivileged` 變為 `docker.io/nginxinc/nginx-unprivileged`）
+
+---
 
 ### Running Rootful Container as Quadlet
 
